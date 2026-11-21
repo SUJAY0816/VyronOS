@@ -1,0 +1,25 @@
+/* XPM */
+static char *pixmap[] = {
+"18 18 3 1",
+". c #120E28",
+"C c #059669",
+"W c #FFFFFF",
+"..................",
+"..................",
+".........C........",
+"......CCCCCCC.....",
+".....CCCCCCCCC....",
+"....CCCCCCCCCCC...",
+"...CCCCCCWCCCCCC..",
+"...CCCCCCWCCCCCC..",
+"...CCCCCCWCCCCCC..",
+"..CCCCWWWWWWWCCCC.",
+"...CCCCCCWCCCCCC..",
+"...CCCCCCWCCCCCC..",
+"...CCCCCCWCCCCCC..",
+"....CCCCCCCCCCC...",
+".....CCCCCCCCC....",
+"......CCCCCCC.....",
+".........C........",
+".................."
+};

@@ -1,0 +1,192 @@
+#!/usr/bin/env python3
+"""
+Generate the perfect XFCE 4.18 panel configuration:
+- Top bar (36px, full width): Whisker menu/Vyron logo, workspaces pill, active window, centered clock, systray, audio, power.
+- Bottom dock (68px, floating center): 48px squircle icons for Browser, Code, Files, Terminal, Sysmon, Editor, Calc, Settings, App Grid.
+"""
+
+import os
+
+OUT_PATH = "/Users/sujayv/Downloads/VyronOS/build/ui_v2/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
+os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+
+xml_content = """<?xml version="1.0" encoding="UTF-8"?>
+<channel name="xfce4-panel" version="1.0">
+  <property name="config-ver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
+  </property>
+  <property name="dark-mode" type="bool" value="true"/>
+
+  <!-- PANEL 1: TOP BAR (36px, Full Width) -->
+  <property name="panel-1" type="empty">
+    <property name="position" type="string" value="p=6;x=0;y=0"/>
+    <property name="length" type="double" value="100"/>
+    <property name="position-locked" type="bool" value="true"/>
+    <property name="size" type="uint" value="36"/>
+    <property name="span-monitors" type="bool" value="true"/>
+    <property name="autohide-behavior" type="uint" value="0"/>
+    <property name="plugin-ids" type="array">
+      <value type="int" value="1"/>
+      <value type="int" value="2"/>
+      <value type="int" value="3"/>
+      <value type="int" value="4"/>
+      <value type="int" value="5"/>
+      <value type="int" value="6"/>
+      <value type="int" value="7"/>
+      <value type="int" value="8"/>
+    </property>
+  </property>
+
+  <!-- PANEL 2: FLOATING DOCK (68px, Bottom Center) -->
+  <property name="panel-2" type="empty">
+    <property name="position" type="string" value="p=10;x=0;y=0"/>
+    <property name="length" type="double" value="32"/>
+    <property name="position-locked" type="bool" value="true"/>
+    <property name="size" type="uint" value="68"/>
+    <property name="icon-size" type="uint" value="48"/>
+    <property name="autohide-behavior" type="uint" value="0"/>
+    <property name="plugin-ids" type="array">
+      <value type="int" value="20"/>
+      <value type="int" value="21"/>
+      <value type="int" value="22"/>
+      <value type="int" value="23"/>
+      <value type="int" value="24"/>
+      <value type="int" value="25"/>
+      <value type="int" value="26"/>
+      <value type="int" value="27"/>
+      <value type="int" value="28"/>
+    </property>
+  </property>
+
+  <!-- PLUGINS CONFIGURATION -->
+  <property name="plugins" type="empty">
+    <!-- Top Bar: Vyron Logo Menu -->
+    <property name="plugin-1" type="string" value="whiskermenu">
+      <property name="button-icon" type="string" value="vyron-logo"/>
+      <property name="button-title" type="string" value=""/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-button-icon" type="bool" value="true"/>
+    </property>
+
+    <!-- Top Bar: Workspace Pager Pill -->
+    <property name="plugin-2" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+    </property>
+
+    <!-- Top Bar: Window Title / Tasklist -->
+    <property name="plugin-3" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="grouping" type="uint" value="1"/>
+    </property>
+
+    <!-- Top Bar: Left Separator -->
+    <property name="plugin-4" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+
+    <!-- Top Bar: Centered Clock -->
+    <property name="plugin-5" type="string" value="clock">
+      <property name="digital-format" type="string" value="%A  %I:%M %p"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+
+    <!-- Top Bar: Right Separator -->
+    <property name="plugin-6" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+
+    <!-- Top Bar: Systray / Status Area -->
+    <property name="plugin-7" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="size-max" type="uint" value="22"/>
+    </property>
+
+    <!-- Top Bar: Power / Action Menu -->
+    <property name="plugin-8" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="-restart"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 1: Web Browser -->
+    <property name="plugin-20" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-browser.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 2: Code Editor -->
+    <property name="plugin-21" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-code.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 3: File Manager -->
+    <property name="plugin-22" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="thunar.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 4: Terminal -->
+    <property name="plugin-23" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="xfce4-terminal.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 5: System Monitor -->
+    <property name="plugin-24" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-sysmon.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 6: Text Editor -->
+    <property name="plugin-25" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-editor.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 7: Calculator -->
+    <property name="plugin-26" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-calc.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 8: Settings -->
+    <property name="plugin-27" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="xfce4-settings-manager.desktop"/>
+      </property>
+    </property>
+
+    <!-- Dock Item 9: App Grid -->
+    <property name="plugin-28" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="vyron-launcher.desktop"/>
+      </property>
+    </property>
+  </property>
+</channel>
+"""
+
+with open(OUT_PATH, "w") as f:
+    f.write(xml_content)
+
+print(f"Panel XML generated at: {OUT_PATH}")

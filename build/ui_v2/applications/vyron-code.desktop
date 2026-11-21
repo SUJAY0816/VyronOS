@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Code Editor
+Comment=Edit Source Code & Scripts
+Exec=mousepad
+Icon=vyron-code
+Terminal=false
+Categories=Development;TextEditor;

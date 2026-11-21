@@ -1,0 +1,24 @@
+[Configuration]
+ColorBackground=#0B071E
+ColorForeground=#F8FAFC
+ColorCursor=#8B5CF6
+ColorBold=#FFFFFF
+ColorPalette=#0B071E;#EF4444;#10B981;#F59E0B;#6366F1;#8B5CF6;#06B6D4;#E2E8F0;#334155;#F87171;#34D399;#FBBF24;#818CF8;#A78BFA;#22D3EE;#FFFFFF
+FontName=DejaVu Sans Mono 10
+MiscAlwaysShowTabs=FALSE
+MiscBell=FALSE
+MiscBorders=FALSE
+MiscCursorBlinks=TRUE
+MiscCursorShape=TERMINAL_CURSOR_SHAPE_IBEAM
+MiscDefaultGeometry=90x26
+MiscInheritGeometry=FALSE
+MiscMenubarDefault=FALSE
+MiscMouseAutohide=TRUE
+MiscToolbarDefault=FALSE
+MiscConfirmClose=TRUE
+MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
+MiscPadding=14
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
+ScrollingLines=10000
+TitleMode=TERMINAL_TITLE_REPLACE
+TitleInitial=Vyron Terminal

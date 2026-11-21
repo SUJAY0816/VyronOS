@@ -1,0 +1,5 @@
+task_id,task_name,cpu_ticks,arrival_tick,completion_tick,turnaround_time,waiting_time,cpu_share_pct
+1,Init-Service,7,1,22,22,15,31.82
+2,Network-Worker,5,3,16,16,11,22.73
+3,Memory-Compactor,6,6,19,19,13,27.27
+4,Telemetry-Daemon,4,9,20,20,16,18.18

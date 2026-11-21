@@ -1,0 +1,222 @@
+/* ==========================================================================
+   VYRON UI V2 — Modern Dark Theme
+   Palette: Graphite, Deep Midnight, Electric Violet (#7C3AED), Soft Cyan (#06B6D4)
+   ========================================================================== */
+
+@define-color theme_bg_color #0E0B1F;
+@define-color theme_base_color #14102B;
+@define-color theme_selected_bg_color #7C3AED;
+@define-color theme_selected_fg_color #FFFFFF;
+@define-color theme_fg_color #F8FAFC;
+@define-color theme_text_color #F8FAFC;
+@define-color borders rgba(255, 255, 255, 0.12);
+@define-color violet_accent #8B5CF6;
+@define-color cyan_accent #06B6D4;
+@define-color card_bg #181434;
+
+* {
+    -GtkScrollbar-has-backward-stepper: 0;
+    -GtkScrollbar-has-forward-stepper: 0;
+    font-family: "Inter", "DejaVu Sans", "Sans", sans-serif;
+    outline: none;
+}
+
+window, .background {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+/* Headerbar & Window Decorations */
+headerbar, .titlebar {
+    background-color: #120E28;
+    border-bottom: 1px solid @borders;
+    color: #F8FAFC;
+    min-height: 34px;
+    padding: 4px 8px;
+    border-radius: 10px 10px 0 0;
+}
+
+headerbar:backdrop, .titlebar:backdrop {
+    background-color: #0E0B1F;
+    color: #94A3B8;
+}
+
+/* Buttons */
+button {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid @borders;
+    border-radius: 8px;
+    color: #F8FAFC;
+    padding: 5px 12px;
+    transition: all 150ms ease;
+}
+
+button:hover {
+    background-color: rgba(124, 58, 237, 0.25);
+    border-color: @violet_accent;
+    color: #FFFFFF;
+}
+
+button:active, button:checked {
+    background-color: @theme_selected_bg_color;
+    border-color: @violet_accent;
+    color: #FFFFFF;
+}
+
+/* Entry & Search Fields */
+entry, searchbar {
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px solid @borders;
+    border-radius: 8px;
+    color: #F8FAFC;
+    padding: 6px 12px;
+}
+
+entry:focus {
+    border-color: @violet_accent;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.35);
+}
+
+/* Progressbars */
+progressbar trough {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    min-height: 8px;
+}
+
+progressbar progress {
+    background-image: linear-gradient(to right, @cyan_accent, @violet_accent);
+    border-radius: 6px;
+}
+
+/* Switches */
+switch {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    min-width: 44px;
+    min-height: 22px;
+}
+
+switch:checked {
+    background-color: @theme_selected_bg_color;
+}
+
+switch slider {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 2px;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+/* Scrollbars */
+scrollbar {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: @violet_accent;
+}
+
+/* Menus & Popovers */
+menu, popover {
+    background-color: rgba(18, 14, 38, 0.96);
+    border: 1px solid @borders;
+    border-radius: 10px;
+    padding: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+menu menuitem {
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: #F8FAFC;
+}
+
+menu menuitem:hover {
+    background-color: @theme_selected_bg_color;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   XFCE PANEL & DOCK CUSTOM STYLING (Vyron UI V2)
+   ========================================================================== */
+
+/* Top Panel */
+.xfce4-panel {
+    background-color: rgba(12, 10, 26, 0.88);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    color: #F8FAFC;
+}
+
+/* Workspace Switcher Pill Container */
+#pager-1, #pager-2, .xfce4-panel .pager {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2px 4px;
+}
+
+.xfce4-panel .pager button {
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: #94A3B8;
+    padding: 2px 8px;
+    min-width: 24px;
+}
+
+.xfce4-panel .pager button:checked, .xfce4-panel .pager button:active {
+    background-color: @theme_selected_bg_color;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Floating Centered Dock */
+#xfce4-panel-2, .xfce4-panel.dock, .dock {
+    background-color: rgba(18, 14, 38, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 4px 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Dock Launcher Buttons */
+#xfce4-panel-2 button, .dock button {
+    background: transparent;
+    border: none;
+    border-radius: 16px;
+    padding: 6px;
+    margin: 0 4px;
+    transition: all 150ms ease;
+}
+
+#xfce4-panel-2 button:hover, .dock button:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Active Running Application Indicator Dot */
+#xfce4-panel-2 button.active, .dock button.active {
+    border-bottom: 3px solid @violet_accent;
+}
+
+/* Clock & Systray in Panel */
+#clock-button, #clock-plugin {
+    font-weight: 500;
+    color: #F8FAFC;
+    padding: 0 10px;
+}
+
+/* Whiskermenu / App Grid */
+#whiskermenu-window {
+    background-color: rgba(18, 14, 38, 0.97);
+    border: 1px solid @borders;
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+}

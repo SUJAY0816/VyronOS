@@ -1,0 +1,8 @@
+Passed: 7/7
+[PASS] VirtualBox VM GUI Startup Successful
+[PASS] Dark Mode Framebuffer Captured (desktop-dark.png)
+[PASS] Dock Running Applications Framebuffer Captured
+[PASS] System Monitor Framebuffer Captured
+[PASS] Network Status Framebuffer Captured
+[PASS] Light Mode / Multi-Resolution Framebuffer Captured
+[PASS] Clean VirtualBox Management & ACPI Powerdown

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Applications
+Comment=Open All Applications Grid
+Exec=xfce4-popup-whiskermenu
+Icon=vyron-launcher
+Terminal=false
+Categories=Utility;

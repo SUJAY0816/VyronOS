@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Text Editor
+Comment=Edit Notes and Documents
+Exec=mousepad
+Icon=vyron-editor
+Terminal=false
+Categories=Utility;TextEditor;

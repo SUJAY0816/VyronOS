@@ -1,0 +1,7 @@
+NAME="VYRON"
+PRETTY_NAME="VYRON Micro-OS 1.0 LTS"
+ID=vyron
+ID_LIKE=debian
+VERSION="1.0"
+VERSION_ID="1.0"
+HOME_URL="https://vyron.dev"

@@ -1,0 +1,12 @@
+[Unit]
+Description=VyronOS Master First-Boot Desktop & Integration Provisioner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/local/bin/vyron-firstboot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

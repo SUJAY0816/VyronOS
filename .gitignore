@@ -1,0 +1,36 @@
+# OS / Desktop metadata
+.DS_Store
+._*
+Thumbs.db
+*.bak
+
+# Large VM Disk Images (GitHub rejects files > 100MB)
+*.vdi
+*.qcow2
+*.qcow2.zst
+*.raw
+*.img
+release_phase7/*.vdi
+release_phase7/*.qcow2*
+vm/*.vdi
+vm/*.raw
+
+# Avoid duplicate ISO in vm/ (root ISO is tracked)
+vm/*.iso
+
+# Rust / Cargo build outputs (rebuildable via `cargo build`)
+target/
+**/target/
+Cargo.lock
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary build staging folders
+build/iso_staging/
+build/boot_assets/
+
+# Upstream source checkouts and quarantine
+sources/
+quarantine/

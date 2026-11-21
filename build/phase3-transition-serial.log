@@ -1,0 +1,927 @@
+[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HBdsDxe: loading Boot0001 "UEFI QEMU HARDDISK QM00001 " from PciRoot(0x0)/Pci(0x1,0x1)/Ata(Primary,Master,0x0)
+BdsDxe: starting Boot0001 "UEFI QEMU HARDDISK QM00001 " from PciRoot(0x0)/Pci(0x1,0x1)/Ata(Primary,Master,0x0)
+[0m[30m[47mWelcome to GRUB!
+
+[0m[37m[40m[0m[30m[40m[2J[01;01H[0m[37m[40m[H[J[1;1H[?25l[m[H[J[1;1H[2;24HGNU GRUB  version 2.06-13+deb12u2
+
+[m[4;2H+----------------------------------------------------------------------------+[5;2H|[5;79H|[6;2H|[6;79H|[7;2H|[7;79H|[8;2H|[8;79H|[9;2H|[9;79H|[10;2H|[10;79H|[11;2H|[11;79H|[12;2H|[12;79H|[13;2H|[13;79H|[14;2H|[14;79H|[15;2H|[15;79H|[16;2H+----------------------------------------------------------------------------+[m[17;2H[18;2H[m     Use the ^ and v keys to select which entry is highlighted.          
+      Press enter to boot the selected OS, `e' to edit the commands       
+      before booting or `c' for a command-line. ESC to return             
+      previous menu.                                                      [5;80H [7m[5;3H*Debian GNU/Linux                                                           [m[5;78H[m[m[6;3H Advanced options for Debian GNU/Linux                                      [m[6;78H[m[m[7;3H                                                                            [m[7;78H[m[m[8;3H                                                                            [m[8;78H[m[m[9;3H                                                                            [m[9;78H[m[m[10;3H                                                                            [m[10;78H[m[m[11;3H                                                                            [m[11;78H[m[m[12;3H                                                                            [m[12;78H[m[m[13;3H                                                                            [m[13;78H[m[m[14;3H                                                                            [m[14;78H[m[m[15;3H                                                                            [m[15;78H[m[15;80H [5;78H[0m[30m[40m[2J[01;01H[0m[37m[40m[02;34HGNU GRUB  version 2.06-13+deb12u2
+
+[0m[36m[44m[04;02H┌────────────────────────────────────────────────────────────────────────────────────────────────┐[05;02H│[05;99H│[06;02H│[06;99H│[07;02H│[07;99H│[08;02H│[08;99H│[09;02H│[09;99H│[10;02H│[10;99H│[11;02H│[11;99H│[12;02H│[12;99H│[13;02H│[13;99H│[14;02H│[14;99H│[15;02H│[15;99H│[16;02H│[16;99H│[17;02H│[17;99H│[18;02H│[18;99H│[19;02H│[19;99H│[20;02H│[20;99H│[21;02H│[21;99H│[22;02H│[22;99H│[23;02H│[23;99H│[24;02H└────────────────────────────────────────────────────────────────────────────────────────────────┘[25;02H[26;02H[0m[37m[40m     Use the ▲ and ▼ keys to select which entry is highlighted.                              
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for 
+      a command-line. ESC to return previous menu.                                            [05;:0H [1m[37m[44m[05;03H*Debian GNU/Linux                                                                               [0m[36m[44m[05;98H[0m[37m[40m[0m[36m[44m[06;03H Advanced options for Debian GNU/Linux                                                          [06;98H[0m[37m[40m[0m[36m[44m[07;03H                                                                                                [07;98H[0m[37m[40m[0m[36m[44m[08;03H                                                                                                [08;98H[0m[37m[40m[0m[36m[44m[09;03H                                                                                                [09;98H[0m[37m[40m[0m[36m[44m[10;03H                                                                                                [10;98H[0m[37m[40m[0m[36m[44m[11;03H                                                                                                [11;98H[0m[37m[40m[0m[36m[44m[12;03H                                                                                                [12;98H[0m[37m[40m[0m[36m[44m[13;03H                                                                                                [13;98H[0m[37m[40m[0m[36m[44m[14;03H                                                                                                [14;98H[0m[37m[40m[0m[36m[44m[15;03H                                                                                                [15;98H[0m[37m[40m[0m[36m[44m[16;03H                                                                                                [16;98H[0m[37m[40m[0m[36m[44m[17;03H                                                                                                [17;98H[0m[37m[40m[0m[36m[44m[18;03H                                                                                                [18;98H[0m[37m[40m[0m[36m[44m[19;03H                                                                                                [19;98H[0m[37m[40m[0m[36m[44m[20;03H                                                                                                [20;98H[0m[37m[40m[0m[36m[44m[21;03H                                                                                                [21;98H[0m[37m[40m[0m[36m[44m[22;03H                                                                                                [22;98H[0m[37m[40m[0m[36m[44m[23;03H                                                                                                [23;98H[0m[37m[40m[23;:0H [05;98H[29;01H   The highlighted entry will be executed automatically in 5s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 5s.                 [5;78H[29;01H   The highlighted entry will be executed automatically in 4s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 4s.                 [5;78H[29;01H   The highlighted entry will be executed automatically in 3s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 3s.                 [5;78H[29;01H   The highlighted entry will be executed automatically in 2s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 2s.                 [5;78H[29;01H   The highlighted entry will be executed automatically in 1s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 1s.                 [5;78H[29;01H   The highlighted entry will be executed automatically in 0s.                                     [05;98H[22;1H   The highlighted entry will be executed automatically in 0s.                 [5;78H[0m[30m[40m[2J[01;01H[0m[37m[40m[?25h[H[J[1;1H[H[J[1;1H[0m[30m[40m[2J[01;01H[0m[37m[40m    Booting `Debian GNU/Linux'Booting `Debian GNU/Linux'
+
+
+
+Loading Linux 6.1.0-56-amd64 ...Loading Linux 6.1.0-56-amd64 ...
+
+Loading initial ramdisk ...Loading initial ramdisk ...
+
+[    0.000000] Linux version 6.1.0-56-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-56-amd64 root=PARTUUID=1607f79a-1e0f-4eda-b09c-25e5acea4dd4 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000007fffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000800000-0x0000000000807fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000000808000-0x000000000080afff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000080b000-0x000000000080bfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000000080c000-0x0000000000810fff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000811000-0x00000000008fffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000000900000-0x000000007ea3bfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007ea3c000-0x000000007eafcfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007eafd000-0x000000007f4ecfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007f4ed000-0x000000007f5ecfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007f5ed000-0x000000007f6ecfff] type 20
+[    0.000000] BIOS-e820: [mem 0x000000007f6ed000-0x000000007f76cfff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007f76d000-0x000000007f77efff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000007f77f000-0x000000007f7fefff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007f7ff000-0x000000007fe9ffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007fea0000-0x000000007fea3fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007fea4000-0x000000007fea5fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007fea6000-0x000000007feebfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007feec000-0x000000007ff6ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007ff70000-0x000000007fffffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff] reserved
+[    0.000000] printk: bootconsole [earlyser0] enabled
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.70 by EDK II
+[    0.000000] efi: SMBIOS=0x7f588000 ACPI=0x7f77e000 ACPI 2.0=0x7f77e014 MEMATTR=0x7de34698 MOKvar=0x7f581000 
+[    0.000000] secureboot: Secure boot disabled
+[    0.000000] SMBIOS 2.8 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS edk2-stable202408-prebuilt.qemu.org 08/13/2024
+[    0.000000] tsc: Fast TSC calibration using PIT
+[    0.000000] tsc: Detected 1000.054 MHz processor
+[    0.003922] AGP: No AGP bridge found
+[    0.004241] last_pfn = 0x7feec max_arch_pfn = 0x400000000
+[    0.005333] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Memory KASLR using RDTSC...
+[    0.064116] RAMDISK: [mem 0x3464d000-0x3631dfff]
+[    0.064725] ACPI: Early table checksum verification disabled
+[    0.065312] ACPI: RSDP 0x000000007F77E014 000024 (v02 BOCHS )
+[    0.065697] ACPI: XSDT 0x000000007F77D0E8 00004C (v01 BOCHS  BXPC     00000001      01000013)
+[    0.066499] ACPI: FACP 0x000000007F779000 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.067282] ACPI: DSDT 0x000000007F77A000 0021F0 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.067492] ACPI: FACS 0x000000007F7DD000 000040
+[    0.067625] ACPI: APIC 0x000000007F778000 000080 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.067757] ACPI: HPET 0x000000007F777000 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.067887] ACPI: WAET 0x000000007F776000 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.068017] ACPI: BGRT 0x000000007F775000 000038 (v01 INTEL  EDK2     00000002      01000013)
+[    0.068201] ACPI: Reserving FACP table memory at [mem 0x7f779000-0x7f779073]
+[    0.068307] ACPI: Reserving DSDT table memory at [mem 0x7f77a000-0x7f77c1ef]
+[    0.068394] ACPI: Reserving FACS table memory at [mem 0x7f7dd000-0x7f7dd03f]
+[    0.068489] ACPI: Reserving APIC table memory at [mem 0x7f778000-0x7f77807f]
+[    0.068575] ACPI: Reserving HPET table memory at [mem 0x7f777000-0x7f777037]
+[    0.068660] ACPI: Reserving WAET table memory at [mem 0x7f776000-0x7f776027]
+[    0.068747] ACPI: Reserving BGRT table memory at [mem 0x7f775000-0x7f775037]
+[    0.071930] No NUMA configuration found
+[    0.072010] Faking a node at [mem 0x0000000000000000-0x000000007feebfff]
+[    0.072906] NODE_DATA(0) allocated [mem 0x7fe0b000-0x7fe35fff]
+[    0.078591] Zone ranges:
+[    0.078664]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.078818]   DMA32    [mem 0x0000000001000000-0x000000007feebfff]
+[    0.078906]   Normal   empty
+[    0.078963]   Device   empty
+[    0.079018] Movable zone start for each node
+[    0.079115] Early memory node ranges
+[    0.079195]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[    0.079405]   node   0: [mem 0x0000000000100000-0x00000000007fffff]
+[    0.079487]   node   0: [mem 0x0000000000808000-0x000000000080afff]
+[    0.079565]   node   0: [mem 0x000000000080c000-0x0000000000810fff]
+[    0.079643]   node   0: [mem 0x0000000000900000-0x000000007ea3bfff]
+[    0.079747]   node   0: [mem 0x000000007eafd000-0x000000007f4ecfff]
+[    0.079827]   node   0: [mem 0x000000007f7ff000-0x000000007fe9ffff]
+[    0.079907]   node   0: [mem 0x000000007fea6000-0x000000007feebfff]
+[    0.080279] Initmem setup node 0 [mem 0x0000000000001000-0x000000007feebfff]
+[    0.081539] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.081923] On node 0, zone DMA: 96 pages in unavailable ranges
+[    0.082012] On node 0, zone DMA: 8 pages in unavailable ranges
+[    0.082087] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.082400] On node 0, zone DMA: 239 pages in unavailable ranges
+[    0.089688] On node 0, zone DMA32: 193 pages in unavailable ranges
+[    0.089931] On node 0, zone DMA32: 786 pages in unavailable ranges
+[    0.090014] On node 0, zone DMA32: 6 pages in unavailable ranges
+[    0.090163] On node 0, zone DMA32: 276 pages in unavailable ranges
+[    0.090565] ACPI: PM-Timer IO Port: 0xb008
+[    0.091193] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    0.091691] IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+[    0.091896] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.092245] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    0.092371] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.092557] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    0.092643] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    0.092933] ACPI: Using ACPI (MADT) for SMP configuration information
+[    0.093059] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.094354] smpboot: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.095672] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.095803] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    0.095907] PM: hibernation: Registered nosave memory: [mem 0x00800000-0x00807fff]
+[    0.096011] PM: hibernation: Registered nosave memory: [mem 0x0080b000-0x0080bfff]
+[    0.096114] PM: hibernation: Registered nosave memory: [mem 0x00811000-0x008fffff]
+[    0.096217] PM: hibernation: Registered nosave memory: [mem 0x7de38000-0x7de40fff]
+[    0.096321] PM: hibernation: Registered nosave memory: [mem 0x7ea3c000-0x7eafcfff]
+[    0.096425] PM: hibernation: Registered nosave memory: [mem 0x7f4ed000-0x7f7fefff]
+[    0.096529] PM: hibernation: Registered nosave memory: [mem 0x7fea0000-0x7fea5fff]
+[    0.096759] [mem 0x80000000-0xffffffff] available for PCI devices
+[    0.096895] Booting paravirtualized kernel on bare hardware
+[    0.097373] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.111124] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:2 nr_cpu_ids:2 nr_node_ids:1
+[    0.124523] percpu: Embedded 62 pages/cpu s217088 r8192 d28672 u1048576
+[    0.127068] Fallback order for Node 0: 0 
+[    0.127409] Built 1 zonelists, mobility grouping on.  Total pages: 512548
+[    0.127552] Policy zone: DMA32
+[    0.127795] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-56-amd64 root=PARTUUID=1607f79a-1e0f-4eda-b09c-25e5acea4dd4 ro console=tty0 console=ttyS0,115200 earlyprintk=ttyS0,115200 consoleblank=0
+[    0.292639] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.313255] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.315317] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.315578] AGP: Checking aperture...
+[    0.317117] AGP: No AGP bridge found
+[    0.358495] Memory: 245020K/2090728K available (14343K kernel code, 2338K rwdata, 9132K rodata, 2824K init, 17344K bss, 163712K reserved, 0K cma-reserved)
+[    0.366883] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Poking KASLR using RDTSC...
+[    0.369856] ftrace: allocating 40521 entries in 159 pages
+[    0.413116] ftrace: allocated 159 pages with 6 groups
+[    0.424467] Dynamic Preempt: voluntary
+[    0.427920] rcu: Preemptible hierarchical RCU implementation.
+[    0.428026] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=2.
+[    0.428221] 	Trampoline variant of Tasks RCU enabled.
+[    0.428293] 	Rude variant of Tasks RCU enabled.
+[    0.428357] 	Tracing variant of Tasks RCU enabled.
+[    0.428554] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.428679] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+[    0.479480] NR_IRQS: 524544, nr_irqs: 440, preallocated irqs: 16
+[    0.485880] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.490946] Console: colour dummy device 80x25
+[    0.494829] printk: console [tty0] enabled
+[    0.496574] printk: console [ttyS0] enabled
+[    0.496574] printk: console [ttyS0] enabled
+[    0.497072] printk: bootconsole [earlyser0] disabled
+[    0.497072] printk: bootconsole [earlyser0] disabled
+[    0.498498] ACPI: Core revision 20220331
+[    0.504364] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.509454] APIC: Switch to symmetric I/O mode setup
+[    0.514117] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.536139] tsc: Marking TSC unstable due to TSCs unsynchronized
+[    0.536771] Calibrating delay loop (skipped), value calculated using timer frequency.. 2000.10 BogoMIPS (lpj=4000216)
+[    0.542568] process: using AMD E400 aware idle routine
+[    0.542891] Last level iTLB entries: 4KB 512, 2MB 255, 4MB 127
+[    0.543018] Last level dTLB entries: 4KB 512, 2MB 255, 4MB 127, 1GB 0
+[    0.543442] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.543724] Spectre V2 : Mitigation: Retpolines
+[    0.543833] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[    0.544360] x86/fpu: x87 FPU will use FXSAVE
+[    0.689009] Freeing SMP alternatives memory: 36K
+[    0.690146] pid_max: default: 32768 minimum: 301
+[    0.718565] LSM: Security Framework initializing
+[    0.721763] landlock: Up and running.
+[    0.721876] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.724360] AppArmor: AppArmor initialized
+[    0.724360] TOMOYO Linux initialized
+[    0.724360] LSM support for eBPF active
+[    0.728425] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.728704] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.870486] smpboot: CPU0: AMD QEMU Virtual CPU version 2.5+ (family: 0xf, model: 0x6b, stepping: 0x1)
+[    0.873238] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.873403] cblist_init_generic: Setting shift to 1 and lim to 1 rcu_task_cpu_ids=2.
+[    0.873826] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.873954] cblist_init_generic: Setting shift to 1 and lim to 1 rcu_task_cpu_ids=2.
+[    0.874481] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.874607] cblist_init_generic: Setting shift to 1 and lim to 1 rcu_task_cpu_ids=2.
+[    0.874985] Performance Events: PMU not available due to virtualization, using software events only.
+[    0.877518] signal: max sigframe size: 1440
+[    0.878414] rcu: Hierarchical SRCU implementation.
+[    0.878536] rcu: 	Max phase no-delay instances is 1000.
+[    0.884360] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.888081] smp: Bringing up secondary CPUs ...
+[    0.895064] x86: Booting SMP configuration:
+[    0.895186] .... node  #0, CPUs:      #1
+[    0.025759] calibrate_delay_direct() dropping max bogoMips estimate 0 = 4513000
+[    0.986209] smp: Brought up 1 node, 2 CPUs
+[    0.986436] smpboot: Max logical packages: 1
+[    0.986586] smpboot: Total of 2 processors activated (3881.17 BogoMIPS)
+[    1.037893] node 0 deferred pages initialised in 44ms
+[    1.044389] devtmpfs: initialized
+[    1.051762] x86/mm: Memory block size: 128MB
+[    1.056877] ACPI: PM: Registering ACPI NVS region [mem 0x00800000-0x00807fff] (32768 bytes)
+[    1.056877] ACPI: PM: Registering ACPI NVS region [mem 0x0080b000-0x0080bfff] (4096 bytes)
+[    1.056877] ACPI: PM: Registering ACPI NVS region [mem 0x00811000-0x008fffff] (978944 bytes)
+[    1.057137] ACPI: PM: Registering ACPI NVS region [mem 0x7f77f000-0x7f7fefff] (524288 bytes)
+[    1.057432] ACPI: PM: Registering ACPI NVS region [mem 0x7fea4000-0x7fea5fff] (8192 bytes)
+[    1.057588] ACPI: PM: Registering ACPI NVS region [mem 0x7ff70000-0x7fffffff] (589824 bytes)
+[    1.059295] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    1.059902] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    1.062532] pinctrl core: initialized pinctrl subsystem
+[    1.083631] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    1.087231] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    1.087971] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    1.088326] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    1.088360] audit: initializing netlink subsys (disabled)
+[    1.089260] audit: type=2000 audit(1795003580.580:1): state=initialized audit_enabled=0 res=1
+[    1.096360] thermal_sys: Registered thermal governor 'fair_share'
+[    1.096360] thermal_sys: Registered thermal governor 'bang_bang'
+[    1.096360] thermal_sys: Registered thermal governor 'step_wise'
+[    1.096360] thermal_sys: Registered thermal governor 'user_space'
+[    1.096360] thermal_sys: Registered thermal governor 'power_allocator'
+[    1.096802] cpuidle: using governor ladder
+[    1.097088] cpuidle: using governor menu
+[    1.112519] efi: Freeing EFI boot services memory: 43628K
+[    1.112866] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    1.122705] PCI: Using configuration type 1 for base access
+[    1.125359] mtrr: your CPUs had inconsistent fixed MTRR settings
+[    1.125476] mtrr: your CPUs had inconsistent variable MTRR settings
+[    1.125587] mtrr: your CPUs had inconsistent MTRRdefType settings
+[    1.125690] mtrr: probably your BIOS does not setup all CPUs.
+[    1.125787] mtrr: corrected configuration.
+[    1.138348] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    1.185227] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.185401] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    1.225211] ACPI: Added _OSI(Module Device)
+[    1.225357] ACPI: Added _OSI(Processor Device)
+[    1.225449] ACPI: Added _OSI(Processor Aggregator Device)
+[    1.245492] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    1.260668] ACPI: Interpreter enabled
+[    1.261843] ACPI: PM: (supports S0 S3 S4 S5)
+[    1.261975] ACPI: Using IOAPIC for interrupt routing
+[    1.262545] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    1.262735] PCI: Ignoring E820 reservations for host bridge windows
+[    1.264360] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    1.321013] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.321943] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+[    1.322262] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    1.323252] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    1.337924] acpiphp: Slot [3] registered
+[    1.338157] acpiphp: Slot [4] registered
+[    1.338341] acpiphp: Slot [5] registered
+[    1.338510] acpiphp: Slot [6] registered
+[    1.338678] acpiphp: Slot [7] registered
+[    1.340193] acpiphp: Slot [8] registered
+[    1.340484] acpiphp: Slot [9] registered
+[    1.340659] acpiphp: Slot [10] registered
+[    1.341986] acpiphp: Slot [11] registered
+[    1.342174] acpiphp: Slot [12] registered
+[    1.342340] acpiphp: Slot [13] registered
+[    1.343733] acpiphp: Slot [14] registered
+[    1.343936] acpiphp: Slot [15] registered
+[    1.344458] acpiphp: Slot [16] registered
+[    1.344626] acpiphp: Slot [17] registered
+[    1.344794] acpiphp: Slot [18] registered
+[    1.344958] acpiphp: Slot [19] registered
+[    1.345868] acpiphp: Slot [20] registered
+[    1.346065] acpiphp: Slot [21] registered
+[    1.346235] acpiphp: Slot [22] registered
+[    1.346399] acpiphp: Slot [23] registered
+[    1.346564] acpiphp: Slot [24] registered
+[    1.346730] acpiphp: Slot [25] registered
+[    1.346896] acpiphp: Slot [26] registered
+[    1.347371] acpiphp: Slot [27] registered
+[    1.347562] acpiphp: Slot [28] registered
+[    1.348360] acpiphp: Slot [29] registered
+[    1.348360] acpiphp: Slot [30] registered
+[    1.348483] acpiphp: Slot [31] registered
+[    1.348827] PCI host bridge to bus 0000:00
+[    1.349128] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    1.349353] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.349481] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    1.349654] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfebfffff window]
+[    1.349797] pci_bus 0000:00: root bus resource [mem 0xc000000000-0xc07fffffff window]
+[    1.350156] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.351630] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    1.358851] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    1.360576] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+[    1.362436] pci 0000:00:01.1: BAR 4 [io  0xc020-0xc02f]
+[    1.363154] pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+[    1.363312] pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+[    1.363447] pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+[    1.363582] pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+[    1.364360] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+[    1.368381] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+[    1.368560] pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+[    1.369231] pci 0000:00:02.0: [1234:1111] type 00 class 0x030000
+[    1.369858] pci 0000:00:02.0: BAR 0 [mem 0x80000000-0x80ffffff pref]
+[    1.371045] pci 0000:00:02.0: BAR 2 [mem 0x81041000-0x81041fff]
+[    1.371045] pci 0000:00:02.0: ROM [mem 0xffff0000-0xffffffff pref]
+[    1.371045] pci 0000:00:02.0: BAR 0: assigned to efifb
+[    1.371045] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    1.371743] pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000
+[    1.372360] pci 0000:00:03.0: BAR 0 [io  0xc000-0xc01f]
+[    1.376820] pci 0000:00:03.0: BAR 1 [mem 0x81040000-0x81040fff]
+[    1.379667] pci 0000:00:03.0: BAR 4 [mem 0xc000000000-0xc000003fff 64bit pref]
+[    1.379667] pci 0000:00:03.0: ROM [mem 0xfffc0000-0xffffffff pref]
+[    1.386600] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    1.387232] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    1.387677] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    1.388120] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    1.388360] ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+[    1.392721] iommu: Default domain type: Translated 
+[    1.392721] iommu: DMA domain TLB invalidation policy: lazy mode 
+[    1.393993] pps_core: LinuxPPS API ver. 1 registered
+[    1.394097] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.396496] PTP clock support registered
+[    1.396845] EDAC MC: Ver: 3.0.0
+[    1.400881] Registered efivars operations
+[    1.409354] NetLabel: Initializing
+[    1.409458] NetLabel:  domain hash size = 128
+[    1.409543] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.410404] NetLabel:  unlabeled traffic allowed by default
+[    1.410530] PCI: Using ACPI for IRQ routing
+[    1.412754] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    1.412917] pci 0000:00:02.0: vgaarb: bridge control possible
+[    1.413068] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    1.413229] vgaarb: loaded
+[    1.416593] hpet: 3 channels of 0 reserved for per-cpu timers
+[    1.416936] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    1.417098] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    1.421561] clocksource: Switched to clocksource hpet
+[    1.431561] VFS: Disk quotas dquot_6.6.0
+[    1.431859] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.440635] AppArmor: AppArmor Filesystem Enabled
+[    1.441025] pnp: PnP ACPI init
+[    1.444105] ACPI: IRQ 4 override to edge(!), high(!)
+[    1.445654] pnp: PnP ACPI: found 6 devices
+[    1.468844] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.470152] NET: Registered PF_INET protocol family
+[    1.473201] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    1.521882] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    1.522288] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.522577] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    1.523472] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    1.524235] TCP: Hash tables configured (established 16384 bind 16384)
+[    1.526527] MPTCP token hash table entries: 2048 (order: 4, 49152 bytes, linear)
+[    1.527046] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.527294] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    1.529279] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.529833] NET: Registered PF_XDP protocol family
+[    1.530247] pci 0000:00:03.0: ROM [mem 0xfffc0000-0xffffffff pref]: can't claim; no compatible bridge window
+[    1.531822] pci 0000:00:03.0: ROM [mem 0x81000000-0x8103ffff pref]: assigned
+[    1.532358] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    1.532515] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    1.532629] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    1.532767] pci_bus 0000:00: resource 7 [mem 0x80000000-0xfebfffff window]
+[    1.532894] pci_bus 0000:00: resource 8 [mem 0xc000000000-0xc07fffffff window]
+[    1.533679] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    1.533918] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    1.533979] PCI: CLS 0 bytes, default 64
+[    1.539708] Trying to unpack rootfs image as initramfs...
+[    1.696366] Initialise system trusted keyrings
+[    1.698714] Key type blacklist registered
+[    1.702153] workingset: timestamp_bits=36 max_order=19 bucket_order=0
+[    1.717003] zbud: loaded
+[    1.724402] integrity: Platform Keyring initialized
+[    1.724882] integrity: Machine keyring initialized
+[    1.725016] Key type asymmetric registered
+[    1.725218] Asymmetric key parser 'x509' registered
+[    4.822127] Freeing initrd memory: 29508K
+[    4.964735] alg: self-tests for CTR-KDF (hmac(sha256)) passed
+[    4.965378] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    4.966302] io scheduler mq-deadline registered
+[    4.978176] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    4.983266] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    4.985729] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    4.992416] Linux agpgart interface v0.103
+[    4.994278] AMD-Vi: AMD IOMMUv2 functionality not available on this system - This is not a bug.
+[    4.998943] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[    5.002300] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    5.002629] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    5.004581] mousedev: PS/2 mouse device common for all mice
+[    5.007848] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    5.007878] rtc_cmos 00:05: RTC can wake from S4
+[    5.011486] rtc_cmos 00:05: registered as rtc0
+[    5.012182] rtc_cmos 00:05: setting system clock to 2026-11-18T12:06:24 UTC (1795003584)
+[    5.013783] rtc_cmos 00:05: alarms up to one day, y3k, 242 bytes nvram
+[    5.014534] ledtrig-cpu: registered to indicate activity on CPUs
+[    5.015915] efifb: probing for efifb
+[    5.016672] efifb: framebuffer at 0x80000000, using 1408k, total 1408k
+[    5.016811] efifb: mode is 800x600x24, linelength=2400, pages=1
+[    5.016934] efifb: scrolling: redraw
+[    5.017048] efifb: Truecolor: size=0:8:8:8, shift=0:16:8:0
+[    5.031562] Console: switching to colour frame buffer device 100x37
+[    5.039587] fb0: EFI VGA frame buffer device
+[    5.125688] NET: Registered PF_INET6 protocol family
+[    5.178501] Segment Routing with IPv6
+[    5.179197] In-situ OAM (IOAM) with IPv6
+[    5.179860] mip6: Mobile IPv6
+[    5.180315] NET: Registered PF_PACKET protocol family
+[    5.180932] mpls_gso: MPLS GSO support
+[    5.183556] IPI shorthand broadcast: enabled
+[    5.186282] registered taskstats version 1
+[    5.186729] Loading compiled-in X.509 certificates
+[    5.277078] Loaded X.509 cert 'Build time autogenerated kernel key: 8963f707e289edc09df337a240938134371a5bb8'
+[    5.287403] zswap: loaded using pool lzo/zbud
+[    5.294399] Key type .fscrypt registered
+[    5.299037] Key type fscrypt-provisioning registered
+[    5.351751] Key type encrypted registered
+[    5.356806] AppArmor: AppArmor sha1 policy hashing enabled
+[    5.362551] ima: No TPM chip found, activating TPM-bypass!
+[    5.367051] ima: Allocated hash algorithm: sha256
+[    5.373099] ima: No architecture policies found
+[    5.377861] evm: Initialising EVM extended attributes:
+[    5.382192] evm: security.selinux
+[    5.386168] evm: security.SMACK64 (disabled)
+[    5.390462] evm: security.SMACK64EXEC (disabled)
+[    5.394419] evm: security.SMACK64TRANSMUTE (disabled)
+[    5.398496] evm: security.SMACK64MMAP (disabled)
+[    5.402395] evm: security.apparmor
+[    5.406305] evm: security.ima
+[    5.409947] evm: security.capability
+[    5.413605] evm: HMAC attrs: 0x1
+[    5.838883] Unstable clock detected, switching default tracing clock to "global"
+[    5.838883] If you want to keep using the local clock, then add:
+[    5.838883]   "trace_clock=local"
+[    5.838883] on the kernel command line
+[    5.854714] clk: Disabling unused clocks
+[    5.878326] Freeing unused decrypted memory: 2036K
+[    5.984380] Freeing unused kernel image (initmem) memory: 2824K
+[    5.988300] Write protecting the kernel read-only data: 26624k
+[    5.997302] Freeing unused kernel image (text/rodata gap) memory: 2040K
+[    6.002722] Freeing unused kernel image (rodata/data gap) memory: 1108K
+[    6.258345] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    6.262774] Run /init as init process
+Loading, please wait...
+Starting systemd-udevd version 252.39-1~deb12u2
+[    6.987780] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0xb100, revision 0
+[    7.071273] Floppy drive(s): fd0 is 2.88M AMI BIOS
+[    7.133997] FDC 0 is a S82078B
+[    7.160660] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input2
+[    7.175137] ACPI: \_SB_.LNKC: Enabled at IRQ 11
+[    7.229099] SCSI subsystem initialized
+[    7.336143] virtio_net virtio0 ens3: renamed from eth0
+[    7.377437] scsi host0: ata_piix
+[    7.385648] scsi host1: ata_piix
+[    7.390099] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc020 irq 14
+[    7.394164] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc028 irq 15
+[    7.576282] ata2: found unknown device (class 0)
+[    7.582837] ata1: found unknown device (class 0)
+[    7.589430] ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[    7.594630] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[    7.598631] ata1.00: 20971520 sectors, multi 16: LBA48 
+[    7.612188] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    7.622074] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[    7.773804] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[    7.858900] sd 0:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+[    7.863990] sd 0:0:0:0: [sda] Write Protect is off
+[    7.868724] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    7.878034] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[    7.883016] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    7.895697] GPT:Primary header thinks Alt. header is not at the end of the disk.
+[    7.900367] GPT:6291455 != 20971519
+[    7.904892] GPT:Alternate GPT header not at the end of the disk.
+[    7.909542] GPT:6291455 != 20971519
+[    7.914151] GPT: Use GNU Parted to correct GPT errors.
+[    7.918110]  sda: sda1 sda14 sda15
+[    7.926907] sd 0:0:0:0: [sda] Attached SCSI disk
+Begin: Loading essential drivers ... done.
+Begin: Running /scripts/init-premount ... done.
+Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
+Begin: Running /scripts/local-premount ... done.
+[    8.681136] I/O error, dev fd0, sector 0 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 2
+[    8.688401] floppy: error 10 while reading block 0
+Warning: fsck not present, so skipping root file system
+[    9.273699] EXT4-fs (sda1): INFO: recovery required on readonly filesystem
+[    9.279090] EXT4-fs (sda1): write access will be enabled during recovery
+[    9.386486] EXT4-fs (sda1): recovery complete
+[    9.393264] EXT4-fs (sda1): mounted filesystem with ordered data mode. Quota mode: none.
+done.
+Begin: Running /scripts/local-bottom ... done.
+Begin: Running /scripts/init-bottom ... done.
+[    9.726934] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[   10.018661] systemd[1]: Inserted module 'autofs4'
+[   10.178498] systemd[1]: systemd 252.39-1~deb12u2 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[   10.199105] systemd[1]: Detected virtualization qemu.
+[   10.204543] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mVYRON Desktop OS 1.0 LTS[0m!
+
+[   10.217394] systemd[1]: Hostname set to <vyron-os>.
+[   11.492566] systemd[1]: Queued start job for default target graphical.target.
+[   11.550785] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-getty.slice[0m - Slice /system/getty.
+[   11.562839] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-modpr…lice[0m - Slice /system/modprobe.
+[   11.572922] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-seria…[0m - Slice /system/serial-getty.
+[   11.581742] systemd[1]: Created slice system-systemd\x2dgrowfs.slice - Slice /system/systemd-growfs.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-syste…0m - Slice /system/systemd-growfs.
+[   11.595318] systemd[1]: Created slice user.slice - User and Session Slice.
+[[0;32m  OK  [0m] Created slice [0;1;39muser.slice[0m - User and Session Slice.
+[   11.603581] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-ask-passwo…quests to Console Directory Watch.
+[   11.615607] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-ask-passwo… Requests to Wall Directory Watch.
+[   11.631898] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount [0;1;39mproc-sys-…rmats File System Automount Point.
+[   11.644749] systemd[1]: Expecting device dev-disk-by\x2dpartuuid-d188d6e1\x2db00d\x2d4332\x2da57c\x2d8528e2408d48.device - /dev/disk/by-partuuid/d188d6e1-b00d-4332-a57c-8528e2408d48...
+         Expecting device [0;1;39mdev-disk-…6e1-b00d-4332-a57c-8528e2408d48...
+[   11.657460] systemd[1]: Expecting device dev-ttyS0.device - /dev/ttyS0...
+         Expecting device [0;1;39mdev-ttyS0.device[0m - /dev/ttyS0...
+[   11.664070] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mcryptsetup.…get[0m - Local Encrypted Volumes.
+[   11.670808] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mintegrityse…Local Integrity Protected Volumes.
+[   11.677539] systemd[1]: Reached target paths.target - Path Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mpaths.target[0m - Path Units.
+[   11.684157] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[[0;32m  OK  [0m] Reached target [0;1;39mremote-fs.target[0m - Remote File Systems.
+[   11.690892] systemd[1]: Reached target slices.target - Slice Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mslices.target[0m - Slice Units.
+[   11.697514] systemd[1]: Reached target swap.target - Swaps.
+[[0;32m  OK  [0m] Reached target [0;1;39mswap.target[0m - Swaps.
+[   11.704172] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mveritysetup… - Local Verity Protected Volumes.
+[   11.714004] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-fsckd…sck to fsckd communication Socket.
+[   11.722288] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-initc… initctl Compatibility Named Pipe.
+[   11.733068] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-journ…socket[0m - Journal Audit Socket.
+[   11.741580] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-journ…t[0m - Journal Socket (/dev/log).
+[   11.749244] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-journald.socket[0m - Journal Socket.
+[   11.757112] systemd[1]: Listening on systemd-networkd.socket - Network Service Netlink Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-netwo… - Network Service Netlink Socket.
+[   11.764896] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-udevd….socket[0m - udev Control Socket.
+[   11.772016] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-udevd…l.socket[0m - udev Kernel Socket.
+[   11.809660] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+         Mounting [0;1;39mdev-hugepages.mount[0m - Huge Pages File System...
+[   11.825141] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+         Mounting [0;1;39mdev-mqueue.mount…POSIX Message Queue File System...
+[   11.838519] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+         Mounting [0;1;39msys-kernel-debug.…[0m - Kernel Debug File System...
+[   11.858992] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+         Mounting [0;1;39msys-kernel-tracin…[0m - Kernel Trace File System...
+[   11.891757] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+         Starting [0;1;39mkmod-static-nodes…ate List of Static Device Nodes...
+[   11.912347] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+         Starting [0;1;39mmodprobe@configfs…m - Load Kernel Module configfs...
+[   11.929232] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+         Starting [0;1;39mmodprobe@dm_mod.s…[0m - Load Kernel Module dm_mod...
+[   11.944602] systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+         Starting [0;1;39mmodprobe@drm.service[0m - Load Kernel Module drm...
+[   11.992945] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+         Starting [0;1;39mmodprobe@efi_psto…- Load Kernel Module efi_pstore...
+[   12.048243] pstore: Using crash dump compression: deflate
+[   12.061613] pstore: Registered efi as persistent store backend
+[   12.068735] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[   12.080774] device-mapper: uevent: version 1.0.3
+[   12.084354] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+         Starting [0;1;39mmodprobe@fuse.ser…e[0m - Load Kernel Module fuse...
+[   12.099938] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[   12.121213] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+         Starting [0;1;39mmodprobe@loop.ser…e[0m - Load Kernel Module loop...
+[   12.128123] systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+[   12.174265] systemd[1]: Starting systemd-fsck-root.service - File System Check on Root Device...
+         Starting [0;1;39msystemd-fsck-root…ile System Check on Root Device...
+[   12.253560] systemd[1]: Starting systemd-journald.service - Journal Service...
+         Starting [0;1;39msystemd-journald.service[0m - Journal Service...
+[   12.303419] fuse: init (API version 7.38)
+[   12.320710] loop: module loaded
+[   12.327466] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   12.345049] ACPI: bus type drm_connector registered
+         Starting [0;1;39msystemd-modules-l…rvice[0m - Load Kernel Modules...
+[   12.363639] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+         Starting [0;1;39msystemd-udev-trig…[0m - Coldplug All udev Devices...
+[   12.440939] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mdev-hugepages.mount[0m - Huge Pages File System.
+[   12.470158] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mdev-mqueue.mount[…- POSIX Message Queue File System.
+[   12.498828] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-debug.m…nt[0m - Kernel Debug File System.
+[   12.507818] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-tracing…nt[0m - Kernel Trace File System.
+[   12.535384] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[[0;32m  OK  [0m] Finished [0;1;39mkmod-static-nodes…reate List of Static Device Nodes.
+[   12.566528] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[   12.582098] systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@configfs…[0m - Load Kernel Module configfs.
+[   12.606883] systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+[   12.625498] systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@dm_mod.s…e[0m - Load Kernel Module dm_mod.
+[   12.650943] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[   12.666341] systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@drm.service[0m - Load Kernel Module drm.
+[   12.685329] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[   12.706191] systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@efi_psto…m - Load Kernel Module efi_pstore.
+[   12.725219] applesmc: supported laptop not found!
+[   12.731252] applesmc: driver init failed (ret=-19)!
+[   12.739823] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   12.747019] systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@fuse.service[0m - Load Kernel Module fuse.
+[   12.756810] systemd[1]: modprobe@loop.service: Deactivated successfully.
+[   12.765925] systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+[[0;32m  OK  [0m] Finished [0;1;39mmodprobe@loop.service[0m - Load Kernel Module loop.
+[   12.774827] systemd[1]: Finished systemd-fsck-root.service - File System Check on Root Device.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-fsck-root… File System Check on Root Device.
+[   12.833159] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+         Mounting [0;1;39msys-fs-fuse-conne…[0m - FUSE Control File System...
+[   12.861115] systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+         Mounting [0;1;39msys-kernel-config…ernel Configuration File System...
+[   12.887874] systemd[1]: Started systemd-fsckd.service - File System Check Daemon to report status.
+[   12.889681] hid: raw HID events driver (C) Jiri Kosina
+[[0;32m  OK  [0m] Started [0;1;39msystemd-fsckd.serv…tem Check Daemon to report status.
+[   12.944327] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+         Starting [0;1;39msystemd-remount-f…nt Root and Kernel File Systems...
+[   12.989052] systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+[   13.041274] systemd[1]: Started systemd-journald.service - Journal Service.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-journald.service[0m - Journal Service.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-modules-l…service[0m - Load Kernel Modules.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-fs-fuse-connec…nt[0m - FUSE Control File System.
+[[0;32m  OK  [0m] Mounted [0;1;39msys-kernel-config.… Kernel Configuration File System.
+         Starting [0;1;39msystemd-sysctl.se…ce[0m - Apply Kernel Variables...
+[   13.097300] EXT4-fs (sda1): re-mounted. Quota mode: none.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-remount-f…ount Root and Kernel File Systems.
+         Starting [0;1;39msystemd-growfs@-.…ice[0m - Grow File System on /...
+         Starting [0;1;39msystemd-journal-f…h Journal to Persistent Storage...
+         Starting [0;1;39msystemd-random-se…ice[0m - Load/Save Random Seed...
+[   13.279442] systemd-journald[205]: Received client request to flush runtime journal.
+         Starting [0;1;39msystemd-sysusers.…rvice[0m - Create System Users...
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-sysctl.service[0m - Apply Kernel Variables.
+[   13.313597] systemd-journald[205]: File /var/log/journal/a3bb926bf46e4e1e8e9f96fd07aabf2b/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   13.341447] EXT4-fs (sda1): resizing filesystem from 753408 to 753408 blocks
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-growfs@-.…rvice[0m - Grow File System on /.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-sysusers.service[0m - Create System Users.
+         Starting [0;1;39msystemd-tmpfiles-…ate Static Device Nodes in /dev...
+[   13.561544] random: crng init done
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-random-se…rvice[0m - Load/Save Random Seed.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-journal-f…ush Journal to Persistent Storage.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-udev-trig…e[0m - Coldplug All udev Devices.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-…reate Static Device Nodes in /dev.
+[[0;32m  OK  [0m] Reached target [0;1;39mlocal-fs-pr…reparation for Local File Systems.
+         Starting [0;1;39msystemd-udevd.ser…ger for Device Events and Files...
+[[0;32m  OK  [0m] Started [0;1;39msystemd-udevd.serv…nager for Device Events and Files.
+         Starting [0;1;39msystemd-networkd.…ice[0m - Network Configuration...
+[   14.738369] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[   14.767380] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[[0;32m  OK  [0m] Found device [0;1;39mdev-ttyS0.device[0m - /dev/ttyS0.
+[   15.420118] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input3
+[   15.568345] ACPI: button: Power Button [PWRF]
+[   15.778225] parport_pc 00:03: reported by Plug and Play ACPI
+[   15.789237] input: PC Speaker as /devices/platform/pcspkr/input/input4
+[   15.852214] parport0: PC-style at 0x378, irq 7 [PCSPP,TRISTATE]
+[   16.235029] ppdev: user-space parallel port driver
+[   16.259039] Console: switching to colour dummy device 80x25
+[   16.265724] bochs-drm 0000:00:02.0: vgaarb: deactivate vga console
+[   16.267580] [drm] Found bochs VGA, ID 0xb0c5.
+[   16.267679] [drm] Framebuffer size 16384 kB @ 0x80000000, mmio @ 0x81041000.
+[   16.270114] [drm] Found EDID data blob.
+[   16.277324] [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:02.0 on minor 0
+[   16.293851] fbcon: bochs-drmdrmfb (fb0) is primary device
+[   16.310916] Console: switching to colour frame buffer device 160x50
+[   16.405230] bochs-drm 0000:00:02.0: [drm] fb0: bochs-drmdrmfb frame buffer device
+[[0;32m  OK  [0m] Found device [0;1;39mdev-disk-by\x…d48.device[0m - QEMU_HARDDISK 15.
+[[0;32m  OK  [0m] Listening on [0;1;39msystemd-rfkil…l Switch Status /dev/rfkill Watch.
+         Mounting [0;1;39mboot-efi.mount[0m - /boot/efi...
+[   17.042939] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   17.046261] cfg80211: Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+[   17.059901] cfg80211: Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+[   17.061344] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   17.065732] cfg80211: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   17.069947] platform regulatory.0: firmware: direct-loading firmware regulatory.db
+[   17.073593] platform regulatory.0: firmware: direct-loading firmware regulatory.db.p7s
+[   17.112485] kvm: Nested Virtualization enabled
+[   17.112891] SVM: kvm: Nested Paging disabled
+[   17.113581] SVM: PMU virtualization is disabled
+[   17.223836] FAT-fs (sda15): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   17.236017] powernow_k8: Power state transitions not supported
+[   17.236608] powernow_k8: Power state transitions not supported
+[[0;32m  OK  [0m] Mounted [0;1;39mboot-efi.mount[0m - /boot/efi.
+[[0;32m  OK  [0m] Reached target [0;1;39mlocal-fs.target[0m - Local File Systems.
+         Starting [0;1;39mapparmor.service[0m - Load AppArmor profiles...
+         Starting [0;1;39msystemd-binfmt.se…et Up Additional Binary Formats...
+         Starting [0;1;39msystemd-tmpfiles-…te System Files and Directories...
+[[0;32m  OK  [0m] Started [0;1;39msystemd-networkd.service[0m - Network Configuration.
+         Mounting [0;1;39mproc-sys-fs-binfm…utable File Formats File System...
+[[0;32m  OK  [0m] Mounted [0;1;39mproc-sys-fs-binfmt…ecutable File Formats File System.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-binfmt.se… Set Up Additional Binary Formats.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-tmpfiles-…eate System Files and Directories.
+[   17.621327] audit: type=1400 audit(1795003597.108:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=271 comm="apparmor_parser"
+[   17.625026] audit: type=1400 audit(1795003597.108:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=272 comm="apparmor_parser"
+[   17.625591] audit: type=1400 audit(1795003597.108:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=272 comm="apparmor_parser"
+         Starting [0;1;39msystemd-resolved.…e[0m - Network Name Resolution...
+[   17.672676] audit: type=1400 audit(1795003597.160:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=273 comm="apparmor_parser"
+[   17.673236] audit: type=1400 audit(1795003597.160:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=273 comm="apparmor_parser"
+[   17.698567] audit: type=1400 audit(1795003597.160:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=273 comm="apparmor_parser"
+         Starting [0;1;39msystemd-timesyncd… - Network Time Synchronization...
+[   17.722477] audit: type=1400 audit(1795003597.180:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=274 comm="apparmor_parser"
+         Starting [0;1;39msystemd-update-ut…rd System Boot/Shutdown in UTMP...
+[[0;32m  OK  [0m] Finished [0;1;39mapparmor.service[0m - Load AppArmor profiles.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-update-ut…cord System Boot/Shutdown in UTMP.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-timesyncd.…0m - Network Time Synchronization.
+[[0;32m  OK  [0m] Reached target [0;1;39mtime-set.target[0m - System Time Set.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-resolved.s…ice[0m - Network Name Resolution.
+[[0;32m  OK  [0m] Reached target [0;1;39mnss-lookup.…m - Host and Network Name Lookups.
+[[0;32m  OK  [0m] Reached target [0;1;39msysinit.target[0m - System Initialization.
+[[0;32m  OK  [0m] Started [0;1;39mapt-daily.timer[0m - Daily apt download activities.
+[[0;32m  OK  [0m] Started [0;1;39mapt-daily-upgrade.… apt upgrade and clean activities.
+[[0;32m  OK  [0m] Started [0;1;39mdpkg-db-backup.tim… Daily dpkg database backup timer.
+[[0;32m  OK  [0m] Started [0;1;39me2scrub_all.timer…etadata Check for All Filesystems.
+[[0;32m  OK  [0m] Started [0;1;39mfstrim.timer[0m - Discard unused blocks once a week.
+[[0;32m  OK  [0m] Started [0;1;39mman-db.timer[0m - Daily man-db regeneration.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-tmpfiles-c… Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Reached target [0;1;39mtimers.target[0m - Timer Units.
+[[0;32m  OK  [0m] Listening on [0;1;39mdbus.socket[…- D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39muuidd.socket…m - UUID daemon activation socket.
+[[0;32m  OK  [0m] Reached target [0;1;39msockets.target[0m - Socket Units.
+[[0;32m  OK  [0m] Reached target [0;1;39mbasic.target[0m - Basic System.
+         Starting [0;1;39mdbus.service[0m - D-Bus System Message Bus...
+         Starting [0;1;39me2scrub_reap.serv…e ext4 Metadata Check Snapshots...
+         Starting [0;1;39mpolkit.service[0m - Authorization Manager...
+         Starting [0;1;39msystemd-logind.se…ice[0m - User Login Management...
+[[0;32m  OK  [0m] Started [0;1;39mdbus.service[0m - D-Bus System Message Bus.
+         Starting [0;1;39mNetworkManager.service[0m - Network Manager...
+         Starting [0;1;39mwpa_supplicant.service[0m - WPA supplicant...
+         Starting [0;1;39msystemd-hostnamed.service[0m - Hostname Service...
+[[0;32m  OK  [0m] Started [0;1;39mwpa_supplicant.service[0m - WPA supplicant.
+[[0;32m  OK  [0m] Started [0;1;39mpolkit.service[0m - Authorization Manager.
+         Starting [0;1;39mModemManager.service[0m - Modem Manager...
+[[0;32m  OK  [0m] Started [0;1;39msystemd-logind.service[0m - User Login Management.
+[[0;32m  OK  [0m] Started [0;1;39mNetworkManager.service[0m - Network Manager.
+[[0;32m  OK  [0m] Reached target [0;1;39mnetwork.target[0m - Network.
+         Starting [0;1;39msystemd-user-sess…vice[0m - Permit User Sessions...
+[[0;32m  OK  [0m] Started [0;1;39munattended-upgrade…0m - Unattended Upgrades Shutdown.
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-user-sess…ervice[0m - Permit User Sessions.
+[[0;32m  OK  [0m] Started [0;1;39mgetty@tty1.service[0m - Getty on tty1.
+[[0;32m  OK  [0m] Started [0;1;39mserial-getty@ttyS0…rvice[0m - Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Reached target [0;1;39mgetty.target[0m - Login Prompts.
+[   20.398874] NET: Registered PF_QIPCRTR protocol family
+[[0;32m  OK  [0m] Started [0;1;39mModemManager.service[0m - Modem Manager.
+[[0;32m  OK  [0m] Started [0;1;39msystemd-hostnamed.service[0m - Hostname Service.
+         Starting [0;1;39mNetworkManager-di…nager Script Dispatcher Service...
+[[0;32m  OK  [0m] Started [0;1;39mNetworkManager-dis…Manager Script Dispatcher Service.
+[[0;32m  OK  [0m] Finished [0;1;39me2scrub_reap.serv…ine ext4 Metadata Check Snapshots.
+[[0;32m  OK  [0m] Reached target [0;1;39mmulti-user.target[0m - Multi-User System.
+[[0;32m  OK  [0m] Reached target [0;1;39mgraphical.target[0m - Graphical Interface.
+         Starting [0;1;39msystemd-update-ut… Record Runlevel Change in UTMP...
+[[0;32m  OK  [0m] Finished [0;1;39msystemd-update-ut… - Record Runlevel Change in UTMP.
+
+VYRON Desktop OS 1.0 LTS (ttyS0)
+Kernel 6.1.0-56-amd64 on an x86_64
+
+vyron-os login: vyron
+Password: 
+Linux vyron-os 6.1.0-56-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.192-2 (2026-11-16) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Nov 18 12:02:07 UTC 2026 on ttyS0
+[   24.726793] systemd-journald[205]: File /var/log/journal/a3bb926bf46e4e1e8e9f96fd07aabf2b/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[?2004hvyron@vyron-os:~$ cat << 'EOF' > /tmp/p3_complete.sh
+[?2004l[?2004h> #!/bin/bash
+[?2004l[?2004h> echo "=== 1. CHECKING NETWORKMANAGER ==="
+[?2004l[?2004h> systemctl status NetworkManager --no-pager || true
+[?2004l[?2004h> nmcli device status || true
+[?2004l[?2004h> nmcli connection show || true
+[?2004l[?2004h> 
+[?2004l[?2004h> echo "=== 2. WAITING FOR NETWORK CONNECTIVITY ==="
+[?2004l[?2004h> for i in {1..20}; do
+[?2004l[?2004h>     if ping -c 1 1.1.1.1 >/dev/null 2>&1; then
+[?2004l[?2004h>         echo "Internet reachable! (attempt $i)"
+[?2004l[?2004h>         break
+[?2004l[?2004h>     fi
+[?2004l[?2004h>     sleep 1
+[?2004l[?2004h> done
+[?2004l[?2004h> 
+[?2004l[?2004h> ip -4 addr show ens3 || true
+[?2004l[?2004h> ip route show || true
+[?2004l[?2004h> ping -c 2 1.1.1.1 || true
+[?2004l[?2004h> ping -c 2 debian.org || true
+[?2004l[?2004h> 
+[?2004l[?2004h> echo "=== 3. VERIFYING INSTALLED DIAGNOSTICS ==="
+[?2004l[?2004h> which ps lspci lsusb ethtool iw rfkill nmcli || true
+[?2004l[?2004h> ps -ef | head -n 10 || true
+[?2004l[?2004h> lspci || true
+[?2004l[?2004h> lsusb || true
+[?2004l[?2004h> 
+[?2004l[?2004h> echo "=== 4. INSTALLING BACKPORTS KERNEL WITH RETRY ==="
+[?2004l[?2004h> apt-get update
+[?2004l[?2004h> DEBIAN_FRONTEND=noninteractive apt-get install -y -t bookworm-backports linux-image-amd64 || true
+[?2004l[?2004h> 
+[?2004l[?2004h> echo "=== 5. CHECKING INSTALLED KERNELS IN BOOT ==="
+[?2004l[?2004h> ls -lh /boot/vmlinuz* /boot/initrd.img* || true
+[?2004l[?2004h> 
+[?2004l[?2004h> echo "=== PHASE 3 STEP 1 COMPLETE ==="
+[?2004l[?2004h> sync
+[?2004l[?2004h> poweroff
+[?2004l[?2004h> EOF
+[?2004l[?2004hvyron@vyron-os:~$ chmod +x /tmp/p3_complete.sh
+[?2004l[?2004hvyron@vyron-os:~$ sudo bash /tmp/p3_complete.sh
+[?2004l=== 1. CHECKING NETWORKMANAGER ===
+[0;1;32m●[0m NetworkManager.service - Network Manager
+     Loaded: loaded (]8;;file://vyron-os/lib/systemd/system/NetworkManager.service/lib/systemd/system/NetworkManager.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Wed 2026-11-18 12:06:39 UTC; 5s ago
+       Docs: ]8;;man:NetworkManager(8)man:NetworkManager(8)]8;;
+   Main PID: 284 (NetworkManager)
+      Tasks: 4[0;38;5;245m (limit: 2258)[0m
+     Memory: 13.4M
+        CPU: 661ms
+     CGroup: /system.slice/NetworkManager.service
+             └─[0;38;5;245m284 /usr/sbin/NetworkManager --no-daemon[0m
+
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.5985] fail…ate
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6240] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6308] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6370] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6396] mode…ble
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6415] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6589] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6603] devi…l')
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6655] devi…ed.
+Nov 18 12:06:40 vyron-os NetworkManager[284]: <info>  [1795003600.6762] mana…ete
+Hint: Some lines were ellipsized, use -l to show in full.
+DEVICE  TYPE      STATE                   CONNECTION 
+[32;2mlo[0m      [32;2mloopback[0m  [32;2mconnected (externally)[0m  [32;2mlo[0m         
+[2mens3[0m    [2methernet[0m  [2munmanaged[0m               [2m--[0m         
+NAME  UUID                                  TYPE      DEVICE [m
+[32;2mlo[0m    [32;2m0cb2db59-81fb-4170-9070-1eaf16ead611[0m  [32;2mloopback[0m  [32;2mlo[0m     [m
+[K=== 2. WAITING FOR NETWORK CONNECTIVITY ===
+Internet reachable! (attempt 1)
+2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    altname enp0s3
+    inet 10.0.2.15/24 metric 100 brd 10.0.2.255 scope global dynamic ens3
+       valid_lft 86392sec preferred_lft 86392sec
+default via 10.0.2.2 dev ens3 proto dhcp src 10.0.2.15 metric 100 
+10.0.2.0/24 dev ens3 proto kernel scope link src 10.0.2.15 metric 100 
+10.0.2.2 dev ens3 proto dhcp scope link src 10.0.2.15 metric 100 
+10.0.2.3 dev ens3 proto dhcp scope link src 10.0.2.15 metric 100 
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=58 time=12.9 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=58 time=13.5 ms
+
+--- 1.1.1.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1004ms
+rtt min/avg/max/mdev = 12.924/13.209/13.494/0.285 ms
+PING debian.org (151.101.2.132) 56(84) bytes of data.
+64 bytes from 151.101.2.132 (151.101.2.132): icmp_seq=1 ttl=56 time=14.8 ms
+64 bytes from 151.101.2.132 (151.101.2.132): icmp_seq=2 ttl=56 time=20.6 ms
+
+--- debian.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1003ms
+rtt min/avg/max/mdev = 14.803/17.680/20.557/2.877 ms
+=== 3. VERIFYING INSTALLED DIAGNOSTICS ===
+/usr/bin/ps
+/usr/bin/lspci
+/usr/bin/lsusb
+/usr/sbin/ethtool
+/usr/sbin/iw
+/usr/sbin/rfkill
+/usr/bin/nmcli
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0 18 12:06 ?        00:00:05 /sbin/init
+root           2       0  0 12:06 ?        00:00:00 [kthreadd]
+root           3       2  0 12:06 ?        00:00:00 [rcu_gp]
+root           4       2  0 12:06 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 12:06 ?        00:00:00 [slub_flushwq]
+root           6       2  0 12:06 ?        00:00:00 [netns]
+root           7       2  0 12:06 ?        00:00:00 [kworker/0:0-events]
+root           8       2  0 12:06 ?        00:00:00 [kworker/0:0H-events_highpri]
+root           9       2  1 12:06 ?        00:00:00 [kworker/u4:0-events_unbound]
+00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
+00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 03)
+00:02.0 VGA compatible controller: Device 1234:1111 (rev 02)
+00:03.0 Ethernet controller: Red Hat, Inc. Virtio network device
+=== 4. INSTALLING BACKPORTS KERNEL WITH RETRY ===
+0% [Working]            Get:1 file:/etc/apt/mirrors/debian.list Mirrorlist [30 B]
+0% [1 Mirrorlist 0 B/30 B 0%] [Waiting for headers]                                                   Hit:2 http://deb.debian.org/debian bookworm-backports InRelease
+                                                   0% [Working]            Get:3 file:/etc/apt/mirrors/debian-security.list Mirrorlist [39 B]
+0% [Working]0% [Working]            Hit:4 https://deb.debian.org/debian bookworm InRelease
+0% [Working]            Hit:5 https://deb.debian.org/debian bookworm-updates InRelease
+0% [Working]            Hit:6 https://deb.debian.org/debian bookworm-backports InRelease
+0% [Waiting for headers]                        Hit:7 https://deb.debian.org/debian-security bookworm-security InRelease
+                        0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]100% [Working]              Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 2%Reading package lists... 2%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 9%Reading package lists... 17%Reading package lists... 25%Reading package lists... 33%Reading package lists... 40%Reading package lists... 48%Reading package lists... 55%Reading package lists... 56%Reading package lists... 56%Reading package lists... 77%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 70%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following additional packages will be installed:
+  linux-image-6.12.95+deb12-amd64
+Suggested packages:
+  firmware-linux-free linux-doc-6.12 debian-kernel-handbook grub-pc
+  | grub-efi-amd64 | extlinux
+The following NEW packages will be installed:
+  linux-image-6.12.95+deb12-amd64
+The following packages will be upgraded:
+  linux-image-amd64
+1 upgraded, 1 newly installed, 0 to remove and 30 not upgraded.
+Need to get 106 MB of archives.
+After this operation, 109 MB of additional disk space will be used.
+0% [Working]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]0% [Connecting to debian.map.fastlydns.net]                                           Get:1 http://deb.debian.org/debian bookworm-backports/main amd64 linux-image-6.12.95+deb12-amd64 amd64 6.12.95-1~bpo12+1 [106 MB]
+0% [1 linux-image-6.12.95+deb12-amd64 2808 B/106 MB 0%]0% [1 linux-image-6.12.95+deb12-amd64 496 kB/106 MB 0%]1% [1 linux-image-6.12.95+deb12-amd64 814 kB/106 MB 1%]      131 kB/s 13min 24s1% [1 linux-image-6.12.95+deb12-amd64 1111 kB/106 MB 1%]     131 kB/s 13min 21s1% [1 linux-image-6.12.95+deb12-amd64 1602 kB/106 MB 2%]     131 kB/s 13min 18s2% [1 linux-image-6.12.95+deb12-amd64 2025 kB/106 MB 2%]     131 kB/s 13min 14s2% [1 linux-image-6.12.95+deb12-amd64 2408 kB/106 MB 2%]     131 kB/s 13min 11s2% [1 linux-image-6.12.95+deb12-amd64 2704 kB/106 MB 3%]      131 kB/s 13min 9s2% [1 linux-image-6.12.95+deb12-amd64 3002 kB/106 MB 3%]      131 kB/s 13min 7s3% [1 linux-image-6.12.95+deb12-amd64 3368 kB/106 MB 3%]      131 kB/s 13min 4s3% [1 linux-image-6.12.95+deb12-amd64 3851 kB/106 MB 4%]      131 kB/s 13min 0s3% [1 linux-image-6.12.95+deb12-amd64 4119 kB/106 MB 4%]     131 kB/s 12min 58s3% [1 linux-image-6.12.95+deb12-amd64 4651 kB/106 MB 4%]     131 kB/s 12min 54s4% [1 linux-image-6.12.95+deb12-amd64 5533 kB/106 MB 5%]     131 kB/s 12min 48s5% [1 linux-image-6.12.95+deb12-amd64 6367 kB/106 MB 6%]      919 kB/s 1min 48s6% [1 linux-image-6.12.95+deb12-amd64 7656 kB/106 MB 7%]      919 kB/s 1min 47s6% [1 linux-image-6.12.95+deb12-amd64 8205 kB/106 MB 8%]      919 kB/s 1min 46s6% [1 linux-image-6.12.95+deb12-amd64 8545 kB/106 MB 8%]      919 kB/s 1min 46s7% [1 linux-image-6.12.95+deb12-amd64 8722 kB/106 MB 8%]      919 kB/s 1min 46s7% [1 linux-image-6.12.95+deb12-amd64 8972 kB/106 MB 8%]      919 kB/s 1min 46s7% [1 linux-image-6.12.95+deb12-amd64 9346 kB/106 MB 9%]      919 kB/s 1min 45s7% [1 linux-image-6.12.95+deb12-amd64 9578 kB/106 MB 9%]      919 kB/s 1min 45s7% [1 linux-image-6.12.95+deb12-amd64 9933 kB/106 MB 9%]      919 kB/s 1min 44s8% [1 linux-image-6.12.95+deb12-amd64 10.4 MB/106 MB 10%]     919 kB/s 1min 44s8% [1 linux-image-6.12.95+deb12-amd64 11.1 MB/106 MB 10%]     919 kB/s 1min 43s9% [1 linux-image-6.12.95+deb12-amd64 12.0 MB/106 MB 11%]     919 kB/s 1min 42s9% [1 linux-image-6.12.95+deb12-amd64 12.5 MB/106 MB 12%]    1020 kB/s 1min 32s10% [1 linux-image-6.12.95+deb12-amd64 12.8 MB/106 MB 12%]   1020 kB/s 1min 31s10% [1 linux-image-6.12.95+deb12-amd64 13.5 MB/106 MB 13%]   1020 kB/s 1min 31s11% [1 linux-image-6.12.95+deb12-amd64 14.0 MB/106 MB 13%]   1020 kB/s 1min 30s11% [1 linux-image-6.12.95+deb12-amd64 14.3 MB/106 MB 13%]   1020 kB/s 1min 30s11% [1 linux-image-6.12.95+deb12-amd64 14.5 MB/106 MB 14%]   1020 kB/s 1min 30s11% [1 linux-image-6.12.95+deb12-amd64 14.8 MB/106 MB 14%]   1020 kB/s 1min 29s11% [1 linux-image-6.12.95+deb12-amd64 15.0 MB/106 MB 14%]   1020 kB/s 1min 29s11% [1 linux-image-6.12.95+deb12-amd64 15.2 MB/106 MB 14%]   1020 kB/s 1min 29s12% [1 linux-image-6.12.95+deb12-amd64 15.7 MB/106 MB 15%]   1020 kB/s 1min 28s12% [1 linux-image-6.12.95+deb12-amd64 16.3 MB/106 MB 15%]   1020 kB/s 1min 28s13% [1 linux-image-6.12.95+deb12-amd64 16.6 MB/106 MB 16%]   1020 kB/s 1min 28s13% [1 linux-image-6.12.95+deb12-amd64 16.9 MB/106 MB 16%]     712 kB/s 2min 5s13% [1 linux-image-6.12.95+deb12-amd64 17.1 MB/106 MB 16%]     712 kB/s 2min 5s13% [1 linux-image-6.12.95+deb12-amd64 17.4 MB/106 MB 16%]     712 kB/s 2min 4s13% [1 linux-image-6.12.95+deb12-amd64 17.7 MB/106 MB 17%]     712 kB/s 2min 4s13% [1 linux-image-6.12.95+deb12-amd64 17.9 MB/106 MB 17%]     712 kB/s 2min 4s14% [1 linux-image-6.12.95+deb12-amd64 18.1 MB/106 MB 17%]     712 kB/s 2min 3s14% [1 linux-image-6.12.95+deb12-amd64 18.4 MB/106 MB 17%]     712 kB/s 2min 3s14% [1 linux-image-6.12.95+deb12-amd64 18.7 MB/106 MB 18%]     712 kB/s 2min 3s14% [1 linux-image-6.12.95+deb12-amd64 18.9 MB/106 MB 18%]     712 kB/s 2min 2s14% [1 linux-image-6.12.95+deb12-amd64 19.1 MB/106 MB 18%]     712 kB/s 2min 2s14% [1 linux-image-6.12.95+deb12-amd64 19.2 MB/106 MB 18%]     712 kB/s 2min 2s15% [1 linux-image-6.12.95+deb12-amd64 19.5 MB/106 MB 18%]     712 kB/s 2min 2s15% [1 linux-image-6.12.95+deb12-amd64 19.6 MB/106 MB 18%]    454 kB/s 3min 11s15% [1 linux-image-6.12.95+deb12-amd64 19.8 MB/106 MB 19%]    454 kB/s 3min 10s15% [1 linux-image-6.12.95+deb12-amd64 19.9 MB/106 MB 19%]    454 kB/s 3min 10s15% [1 linux-image-6.12.95+deb12-amd64 20.3 MB/106 MB 19%]     454 kB/s 3min 9s15% [1 linux-image-6.12.95+deb12-amd64 20.5 MB/106 MB 19%]     454 kB/s 3min 9s16% [1 linux-image-6.12.95+deb12-amd64 20.8 MB/106 MB 20%]     454 kB/s 3min 8s16% [1 linux-image-6.12.95+deb12-amd64 21.0 MB/106 MB 20%]     454 kB/s 3min 8s16% [1 linux-image-6.12.95+deb12-amd64 21.2 MB/106 MB 20%]     454 kB/s 3min 7s16% [1 linux-image-6.12.95+deb12-amd64 21.4 MB/106 MB 20%]     454 kB/s 3min 7s16% [1 linux-image-6.12.95+deb12-amd64 21.9 MB/106 MB 21%]     454 kB/s 3min 6s17% [1 linux-image-6.12.95+deb12-amd64 22.2 MB/106 MB 21%]     454 kB/s 3min 5s17% [1 linux-image-6.12.95+deb12-amd64 23.0 MB/106 MB 22%]     454 kB/s 3min 3s18% [1 linux-image-6.12.95+deb12-amd64 23.7 MB/106 MB 22%]     675 kB/s 2min 2s18% [1 linux-image-6.12.95+deb12-amd64 24.0 MB/106 MB 23%]     675 kB/s 2min 2s18% [1 linux-image-6.12.95+deb12-amd64 24.2 MB/106 MB 23%]     675 kB/s 2min 1s18% [1 linux-image-6.12.95+deb12-amd64 24.5 MB/106 MB 23%]     675 kB/s 2min 1s19% [1 linux-image-6.12.95+deb12-amd64 25.1 MB/106 MB 24%]     675 kB/s 2min 0s19% [1 linux-image-6.12.95+deb12-amd64 25.9 MB/106 MB 24%]    675 kB/s 1min 59s20% [1 linux-image-6.12.95+deb12-amd64 26.7 MB/106 MB 25%]    675 kB/s 1min 58s20% [1 linux-image-6.12.95+deb12-amd64 27.2 MB/106 MB 26%]    675 kB/s 1min 57s21% [1 linux-image-6.12.95+deb12-amd64 27.6 MB/106 MB 26%]    675 kB/s 1min 56s21% [1 linux-image-6.12.95+deb12-amd64 28.5 MB/106 MB 27%]    675 kB/s 1min 55s22% [1 linux-image-6.12.95+deb12-amd64 29.5 MB/106 MB 28%]    675 kB/s 1min 53s23% [1 linux-image-6.12.95+deb12-amd64 30.1 MB/106 MB 28%]    675 kB/s 1min 53s23% [1 linux-image-6.12.95+deb12-amd64 30.4 MB/106 MB 29%]    1110 kB/s 1min 8s23% [1 linux-image-6.12.95+deb12-amd64 30.9 MB/106 MB 29%]    1110 kB/s 1min 8s24% [1 linux-image-6.12.95+deb12-amd64 31.4 MB/106 MB 30%]    1110 kB/s 1min 7s24% [1 linux-image-6.12.95+deb12-amd64 31.7 MB/106 MB 30%]    1110 kB/s 1min 7s24% [1 linux-image-6.12.95+deb12-amd64 32.2 MB/106 MB 30%]    1110 kB/s 1min 6s25% [1 linux-image-6.12.95+deb12-amd64 33.0 MB/106 MB 31%]    1110 kB/s 1min 6s26% [1 linux-image-6.12.95+deb12-amd64 33.9 MB/106 MB 32%]    1110 kB/s 1min 5s26% [1 linux-image-6.12.95+deb12-amd64 34.7 MB/106 MB 33%]    1110 kB/s 1min 4s27% [1 linux-image-6.12.95+deb12-amd64 35.5 MB/106 MB 33%]    1110 kB/s 1min 3s27% [1 linux-image-6.12.95+deb12-amd64 36.2 MB/106 MB 34%]    1110 kB/s 1min 3s28% [1 linux-image-6.12.95+deb12-amd64 36.9 MB/106 MB 35%]    1110 kB/s 1min 2s28% [1 linux-image-6.12.95+deb12-amd64 37.9 MB/106 MB 36%]    1110 kB/s 1min 1s29% [1 linux-image-6.12.95+deb12-amd64 38.4 MB/106 MB 36%]        1330 kB/s 51s29% [1 linux-image-6.12.95+deb12-amd64 38.9 MB/106 MB 37%]        1330 kB/s 50s30% [1 linux-image-6.12.95+deb12-amd64 39.4 MB/106 MB 37%]        1330 kB/s 50s30% [1 linux-image-6.12.95+deb12-amd64 39.9 MB/106 MB 37%]        1330 kB/s 50s30% [1 linux-image-6.12.95+deb12-amd64 40.6 MB/106 MB 38%]        1330 kB/s 49s31% [1 linux-image-6.12.95+deb12-amd64 41.5 MB/106 MB 39%]        1330 kB/s 48s32% [1 linux-image-6.12.95+deb12-amd64 42.1 MB/106 MB 40%]        1330 kB/s 48s32% [1 linux-image-6.12.95+deb12-amd64 43.0 MB/106 MB 40%]        1330 kB/s 47s33% [1 linux-image-6.12.95+deb12-amd64 44.2 MB/106 MB 41%]        1330 kB/s 46s34% [1 linux-image-6.12.95+deb12-amd64 44.6 MB/106 MB 42%]        1330 kB/s 46s34% [1 linux-image-6.12.95+deb12-amd64 44.9 MB/106 MB 42%]        1330 kB/s 46s34% [1 linux-image-6.12.95+deb12-amd64 45.1 MB/106 MB 42%]        1330 kB/s 46s34% [1 linux-image-6.12.95+deb12-amd64 45.7 MB/106 MB 43%]        1201 kB/s 50s35% [1 linux-image-6.12.95+deb12-amd64 46.4 MB/106 MB 44%]        1201 kB/s 49s35% [1 linux-image-6.12.95+deb12-amd64 47.0 MB/106 MB 44%]        1201 kB/s 49s36% [1 linux-image-6.12.95+deb12-amd64 47.7 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 47.9 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.1 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.2 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.3 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.3 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.4 MB/106 MB 45%]        1201 kB/s 48s36% [1 linux-image-6.12.95+deb12-amd64 48.4 MB/106 MB 45%]        1201 kB/s 48s37% [1 linux-image-6.12.95+deb12-amd64 48.6 MB/106 MB 46%]        1201 kB/s 48s37% [1 linux-image-6.12.95+deb12-amd64 48.9 MB/106 MB 46%]    530 kB/s 1min 48s37% [1 linux-image-6.12.95+deb12-amd64 49.1 MB/106 MB 46%]    530 kB/s 1min 48s37% [1 linux-image-6.12.95+deb12-amd64 49.2 MB/106 MB 46%]    530 kB/s 1min 48s37% [1 linux-image-6.12.95+deb12-amd64 49.4 MB/106 MB 46%]    530 kB/s 1min 47s37% [1 linux-image-6.12.95+deb12-amd64 49.7 MB/106 MB 47%]    530 kB/s 1min 47s37% [1 linux-image-6.12.95+deb12-amd64 49.8 MB/106 MB 47%]    530 kB/s 1min 46s38% [1 linux-image-6.12.95+deb12-amd64 50.0 MB/106 MB 47%]    530 kB/s 1min 46s38% [1 linux-image-6.12.95+deb12-amd64 50.2 MB/106 MB 47%]    530 kB/s 1min 46s38% [1 linux-image-6.12.95+deb12-amd64 50.5 MB/106 MB 47%]    530 kB/s 1min 45s38% [1 linux-image-6.12.95+deb12-amd64 50.6 MB/106 MB 48%]    530 kB/s 1min 45s38% [1 linux-image-6.12.95+deb12-amd64 50.8 MB/106 MB 48%]    530 kB/s 1min 45s38% [1 linux-image-6.12.95+deb12-amd64 51.0 MB/106 MB 48%]    530 kB/s 1min 44s38% [1 linux-image-6.12.95+deb12-amd64 51.1 MB/106 MB 48%]    370 kB/s 2min 29s39% [1 linux-image-6.12.95+deb12-amd64 51.3 MB/106 MB 48%]    370 kB/s 2min 29s39% [1 linux-image-6.12.95+deb12-amd64 51.4 MB/106 MB 48%]    370 kB/s 2min 28s39% [1 linux-image-6.12.95+deb12-amd64 51.5 MB/106 MB 48%]    370 kB/s 2min 28s39% [1 linux-image-6.12.95+deb12-amd64 51.5 MB/106 MB 48%]    370 kB/s 2min 28s39% [1 linux-image-6.12.95+deb12-amd64 51.7 MB/106 MB 49%]    370 kB/s 2min 28s39% [1 linux-image-6.12.95+deb12-amd64 51.8 MB/106 MB 49%]    370 kB/s 2min 27s39% [1 linux-image-6.12.95+deb12-amd64 51.9 MB/106 MB 49%]    370 kB/s 2min 27s39% [1 linux-image-6.12.95+deb12-amd64 52.1 MB/106 MB 49%]    370 kB/s 2min 26s39% [1 linux-image-6.12.95+deb12-amd64 52.3 MB/106 MB 49%]    370 kB/s 2min 26s40% [1 linux-image-6.12.95+deb12-amd64 52.7 MB/106 MB 49%]    370 kB/s 2min 25s40% [1 linux-image-6.12.95+deb12-amd64 53.0 MB/106 MB 50%]    370 kB/s 2min 24s40% [1 linux-image-6.12.95+deb12-amd64 53.1 MB/106 MB 50%]    324 kB/s 2min 44s40% [1 linux-image-6.12.95+deb12-amd64 53.1 MB/106 MB 50%]    324 kB/s 2min 44s40% [1 linux-image-6.12.95+deb12-amd64 53.2 MB/106 MB 50%]    324 kB/s 2min 44s40% [1 linux-image-6.12.95+deb12-amd64 53.6 MB/106 MB 50%]    324 kB/s 2min 43s40% [1 linux-image-6.12.95+deb12-amd64 53.8 MB/106 MB 51%]    324 kB/s 2min 42s41% [1 linux-image-6.12.95+deb12-amd64 54.0 MB/106 MB 51%]    324 kB/s 2min 41s41% [1 linux-image-6.12.95+deb12-amd64 54.3 MB/106 MB 51%]    324 kB/s 2min 41s41% [1 linux-image-6.12.95+deb12-amd64 54.5 MB/106 MB 51%]    324 kB/s 2min 40s41% [1 linux-image-6.12.95+deb12-amd64 54.5 MB/106 MB 51%]    324 kB/s 2min 40s41% [1 linux-image-6.12.95+deb12-amd64 54.7 MB/106 MB 51%]    324 kB/s 2min 39s41% [1 linux-image-6.12.95+deb12-amd64 54.9 MB/106 MB 52%]    324 kB/s 2min 39s42% [1 linux-image-6.12.95+deb12-amd64 55.4 MB/106 MB 52%]    324 kB/s 2min 37s42% [1 linux-image-6.12.95+deb12-amd64 55.8 MB/106 MB 52%]    453 kB/s 1min 51s42% [1 linux-image-6.12.95+deb12-amd64 56.3 MB/106 MB 53%]    453 kB/s 1min 50s43% [1 linux-image-6.12.95+deb12-amd64 56.7 MB/106 MB 53%]    453 kB/s 1min 49s43% [1 linux-image-6.12.95+deb12-amd64 57.0 MB/106 MB 54%]    453 kB/s 1min 49s43% [1 linux-image-6.12.95+deb12-amd64 57.7 MB/106 MB 54%]    453 kB/s 1min 47s44% [1 linux-image-6.12.95+deb12-amd64 58.3 MB/106 MB 55%]    453 kB/s 1min 46s44% [1 linux-image-6.12.95+deb12-amd64 58.8 MB/106 MB 55%]    453 kB/s 1min 45s45% [1 linux-image-6.12.95+deb12-amd64 59.6 MB/106 MB 56%]    453 kB/s 1min 43s45% [1 linux-image-6.12.95+deb12-amd64 60.2 MB/106 MB 57%]    453 kB/s 1min 42s46% [1 linux-image-6.12.95+deb12-amd64 60.7 MB/106 MB 57%]    453 kB/s 1min 40s46% [1 linux-image-6.12.95+deb12-amd64 61.5 MB/106 MB 58%]    453 kB/s 1min 39s46% [1 linux-image-6.12.95+deb12-amd64 61.8 MB/106 MB 58%]    453 kB/s 1min 38s47% [1 linux-image-6.12.95+deb12-amd64 62.2 MB/106 MB 58%]        1060 kB/s 41s47% [1 linux-image-6.12.95+deb12-amd64 62.6 MB/106 MB 59%]        1060 kB/s 41s47% [1 linux-image-6.12.95+deb12-amd64 62.8 MB/106 MB 59%]        1060 kB/s 41s47% [1 linux-image-6.12.95+deb12-amd64 63.2 MB/106 MB 59%]        1060 kB/s 40s48% [1 linux-image-6.12.95+deb12-amd64 63.4 MB/106 MB 60%]        1060 kB/s 40s48% [1 linux-image-6.12.95+deb12-amd64 63.6 MB/106 MB 60%]        1060 kB/s 40s48% [1 linux-image-6.12.95+deb12-amd64 64.0 MB/106 MB 60%]        1060 kB/s 40s48% [1 linux-image-6.12.95+deb12-amd64 64.0 MB/106 MB 60%]        1060 kB/s 39s48% [1 linux-image-6.12.95+deb12-amd64 64.1 MB/106 MB 60%]        1060 kB/s 39s48% [1 linux-image-6.12.95+deb12-amd64 64.3 MB/106 MB 60%]        1060 kB/s 39s49% [1 linux-image-6.12.95+deb12-amd64 64.6 MB/106 MB 61%]        1060 kB/s 39s49% [1 linux-image-6.12.95+deb12-amd64 64.8 MB/106 MB 61%]        1060 kB/s 39s49% [1 linux-image-6.12.95+deb12-amd64 65.3 MB/106 MB 61%]    513 kB/s 1min 20s49% [1 linux-image-6.12.95+deb12-amd64 65.7 MB/106 MB 62%]    513 kB/s 1min 19s49% [1 linux-image-6.12.95+deb12-amd64 65.8 MB/106 MB 62%]    513 kB/s 1min 19s50% [1 linux-image-6.12.95+deb12-amd64 66.1 MB/106 MB 62%]    513 kB/s 1min 18s50% [1 linux-image-6.12.95+deb12-amd64 66.6 MB/106 MB 63%]    513 kB/s 1min 17s51% [1 linux-image-6.12.95+deb12-amd64 67.5 MB/106 MB 63%]    513 kB/s 1min 15s51% [1 linux-image-6.12.95+deb12-amd64 67.9 MB/106 MB 64%]    513 kB/s 1min 15s51% [1 linux-image-6.12.95+deb12-amd64 68.3 MB/106 MB 64%]    513 kB/s 1min 14s52% [1 linux-image-6.12.95+deb12-amd64 68.6 MB/106 MB 64%]    513 kB/s 1min 13s52% [1 linux-image-6.12.95+deb12-amd64 69.2 MB/106 MB 65%]    513 kB/s 1min 12s52% [1 linux-image-6.12.95+deb12-amd64 69.7 MB/106 MB 66%]    513 kB/s 1min 11s53% [1 linux-image-6.12.95+deb12-amd64 70.0 MB/106 MB 66%]    513 kB/s 1min 10s53% [1 linux-image-6.12.95+deb12-amd64 70.3 MB/106 MB 66%]         827 kB/s 43s53% [1 linux-image-6.12.95+deb12-amd64 70.7 MB/106 MB 66%]         827 kB/s 43s53% [1 linux-image-6.12.95+deb12-amd64 71.1 MB/106 MB 67%]         827 kB/s 42s54% [1 linux-image-6.12.95+deb12-amd64 71.5 MB/106 MB 67%]         827 kB/s 42s54% [1 linux-image-6.12.95+deb12-amd64 71.8 MB/106 MB 67%]         827 kB/s 41s54% [1 linux-image-6.12.95+deb12-amd64 72.0 MB/106 MB 68%]         827 kB/s 41s54% [1 linux-image-6.12.95+deb12-amd64 72.3 MB/106 MB 68%]         827 kB/s 41s54% [1 linux-image-6.12.95+deb12-amd64 72.5 MB/106 MB 68%]         827 kB/s 41s55% [1 linux-image-6.12.95+deb12-amd64 72.9 MB/106 MB 68%]         827 kB/s 40s55% [1 linux-image-6.12.95+deb12-amd64 73.2 MB/106 MB 69%]         827 kB/s 40s55% [1 linux-image-6.12.95+deb12-amd64 73.6 MB/106 MB 69%]         827 kB/s 39s56% [1 linux-image-6.12.95+deb12-amd64 74.2 MB/106 MB 70%]         827 kB/s 38s56% [1 linux-image-6.12.95+deb12-amd64 74.5 MB/106 MB 70%]         681 kB/s 46s56% [1 linux-image-6.12.95+deb12-amd64 74.5 MB/106 MB 70%]         681 kB/s 46s56% [1 linux-image-6.12.95+deb12-amd64 74.7 MB/106 MB 70%]         681 kB/s 46s56% [1 linux-image-6.12.95+deb12-amd64 74.9 MB/106 MB 70%]         681 kB/s 46s57% [1 linux-image-6.12.95+deb12-amd64 75.3 MB/106 MB 71%]         681 kB/s 45s57% [1 linux-image-6.12.95+deb12-amd64 75.4 MB/106 MB 71%]         681 kB/s 45s57% [1 linux-image-6.12.95+deb12-amd64 75.6 MB/106 MB 71%]         681 kB/s 45s57% [1 linux-image-6.12.95+deb12-amd64 75.8 MB/106 MB 71%]         681 kB/s 44s57% [1 linux-image-6.12.95+deb12-amd64 76.3 MB/106 MB 72%]         681 kB/s 44s58% [1 linux-image-6.12.95+deb12-amd64 76.8 MB/106 MB 72%]         681 kB/s 43s58% [1 linux-image-6.12.95+deb12-amd64 77.0 MB/106 MB 72%]         681 kB/s 43s58% [1 linux-image-6.12.95+deb12-amd64 77.1 MB/106 MB 72%]         681 kB/s 42s58% [1 linux-image-6.12.95+deb12-amd64 77.4 MB/106 MB 73%]         479 kB/s 60s58% [1 linux-image-6.12.95+deb12-amd64 77.6 MB/106 MB 73%]         479 kB/s 60s59% [1 linux-image-6.12.95+deb12-amd64 77.9 MB/106 MB 73%]         479 kB/s 59s59% [1 linux-image-6.12.95+deb12-amd64 78.3 MB/106 MB 74%]         479 kB/s 58s59% [1 linux-image-6.12.95+deb12-amd64 78.5 MB/106 MB 74%]         479 kB/s 58s59% [1 linux-image-6.12.95+deb12-amd64 78.8 MB/106 MB 74%]         479 kB/s 57s60% [1 linux-image-6.12.95+deb12-amd64 79.4 MB/106 MB 75%]         479 kB/s 56s60% [1 linux-image-6.12.95+deb12-amd64 80.0 MB/106 MB 75%]         479 kB/s 55s60% [1 linux-image-6.12.95+deb12-amd64 80.1 MB/106 MB 75%]         479 kB/s 54s60% [1 linux-image-6.12.95+deb12-amd64 80.3 MB/106 MB 75%]         479 kB/s 54s61% [1 linux-image-6.12.95+deb12-amd64 80.7 MB/106 MB 76%]         479 kB/s 53s61% [1 linux-image-6.12.95+deb12-amd64 80.9 MB/106 MB 76%]         479 kB/s 53s61% [1 linux-image-6.12.95+deb12-amd64 80.9 MB/106 MB 76%]         586 kB/s 43s61% [1 linux-image-6.12.95+deb12-amd64 80.9 MB/106 MB 76%]         586 kB/s 43s61% [1 linux-image-6.12.95+deb12-amd64 81.1 MB/106 MB 76%]         586 kB/s 43s61% [1 linux-image-6.12.95+deb12-amd64 81.4 MB/106 MB 76%]         586 kB/s 42s61% [1 linux-image-6.12.95+deb12-amd64 81.5 MB/106 MB 77%]         586 kB/s 42s61% [1 linux-image-6.12.95+deb12-amd64 81.7 MB/106 MB 77%]         586 kB/s 42s62% [1 linux-image-6.12.95+deb12-amd64 81.9 MB/106 MB 77%]         586 kB/s 41s62% [1 linux-image-6.12.95+deb12-amd64 82.1 MB/106 MB 77%]         586 kB/s 41s62% [1 linux-image-6.12.95+deb12-amd64 82.2 MB/106 MB 77%]         586 kB/s 41s62% [1 linux-image-6.12.95+deb12-amd64 82.4 MB/106 MB 77%]         586 kB/s 40s62% [1 linux-image-6.12.95+deb12-amd64 82.7 MB/106 MB 78%]         586 kB/s 40s62% [1 linux-image-6.12.95+deb12-amd64 83.0 MB/106 MB 78%]         586 kB/s 39s63% [1 linux-image-6.12.95+deb12-amd64 83.3 MB/106 MB 78%]         403 kB/s 57s63% [1 linux-image-6.12.95+deb12-amd64 83.9 MB/106 MB 79%]         403 kB/s 55s63% [1 linux-image-6.12.95+deb12-amd64 84.2 MB/106 MB 79%]         403 kB/s 55s64% [1 linux-image-6.12.95+deb12-amd64 84.9 MB/106 MB 80%]         403 kB/s 53s64% [1 linux-image-6.12.95+deb12-amd64 85.4 MB/106 MB 80%]         403 kB/s 52s64% [1 linux-image-6.12.95+deb12-amd64 85.7 MB/106 MB 81%]         403 kB/s 51s65% [1 linux-image-6.12.95+deb12-amd64 86.0 MB/106 MB 81%]         403 kB/s 50s65% [1 linux-image-6.12.95+deb12-amd64 86.3 MB/106 MB 81%]         403 kB/s 49s65% [1 linux-image-6.12.95+deb12-amd64 86.8 MB/106 MB 82%]         403 kB/s 48s65% [1 linux-image-6.12.95+deb12-amd64 87.1 MB/106 MB 82%]         403 kB/s 47s66% [1 linux-image-6.12.95+deb12-amd64 87.4 MB/106 MB 82%]         403 kB/s 47s66% [1 linux-image-6.12.95+deb12-amd64 87.6 MB/106 MB 82%]         403 kB/s 46s66% [1 linux-image-6.12.95+deb12-amd64 88.1 MB/106 MB 83%]         785 kB/s 23s67% [1 linux-image-6.12.95+deb12-amd64 88.5 MB/106 MB 83%]         785 kB/s 22s67% [1 linux-image-6.12.95+deb12-amd64 88.8 MB/106 MB 83%]         785 kB/s 22s67% [1 linux-image-6.12.95+deb12-amd64 89.3 MB/106 MB 84%]         785 kB/s 21s68% [1 linux-image-6.12.95+deb12-amd64 89.9 MB/106 MB 85%]         785 kB/s 21s68% [1 linux-image-6.12.95+deb12-amd64 90.1 MB/106 MB 85%]         785 kB/s 20s68% [1 linux-image-6.12.95+deb12-amd64 90.2 MB/106 MB 85%]         785 kB/s 20s68% [1 linux-image-6.12.95+deb12-amd64 90.4 MB/106 MB 85%]         785 kB/s 20s68% [1 linux-image-6.12.95+deb12-amd64 90.5 MB/106 MB 85%]         785 kB/s 20s68% [1 linux-image-6.12.95+deb12-amd64 90.7 MB/106 MB 85%]         785 kB/s 20s68% [1 linux-image-6.12.95+deb12-amd64 91.0 MB/106 MB 85%]         785 kB/s 19s69% [1 linux-image-6.12.95+deb12-amd64 91.2 MB/106 MB 86%]         785 kB/s 19s69% [1 linux-image-6.12.95+deb12-amd64 91.4 MB/106 MB 86%]         548 kB/s 27s69% [1 linux-image-6.12.95+deb12-amd64 91.8 MB/106 MB 86%]         548 kB/s 26s70% [1 linux-image-6.12.95+deb12-amd64 92.5 MB/106 MB 87%]         548 kB/s 25s70% [1 linux-image-6.12.95+deb12-amd64 92.9 MB/106 MB 87%]         548 kB/s 24s70% [1 linux-image-6.12.95+deb12-amd64 93.1 MB/106 MB 88%]         548 kB/s 24s70% [1 linux-image-6.12.95+deb12-amd64 93.4 MB/106 MB 88%]         548 kB/s 23s70% [1 linux-image-6.12.95+deb12-amd64 93.4 MB/106 MB 88%]         548 kB/s 23s71% [1 linux-image-6.12.95+deb12-amd64 93.8 MB/106 MB 88%]         548 kB/s 22s71% [1 linux-image-6.12.95+deb12-amd64 94.3 MB/106 MB 89%]         548 kB/s 22s71% [1 linux-image-6.12.95+deb12-amd64 94.7 MB/106 MB 89%]         548 kB/s 21s71% [1 linux-image-6.12.95+deb12-amd64 95.0 MB/106 MB 89%]         548 kB/s 20s72% [1 linux-image-6.12.95+deb12-amd64 95.3 MB/106 MB 90%]         548 kB/s 20s72% [1 linux-image-6.12.95+deb12-amd64 95.5 MB/106 MB 90%]         682 kB/s 15s72% [1 linux-image-6.12.95+deb12-amd64 95.7 MB/106 MB 90%]         682 kB/s 15s72% [1 linux-image-6.12.95+deb12-amd64 95.9 MB/106 MB 90%]         682 kB/s 15s72% [1 linux-image-6.12.95+deb12-amd64 96.0 MB/106 MB 90%]         682 kB/s 15s72% [1 linux-image-6.12.95+deb12-amd64 96.2 MB/106 MB 90%]         682 kB/s 14s73% [1 linux-image-6.12.95+deb12-amd64 96.5 MB/106 MB 91%]         682 kB/s 14s73% [1 linux-image-6.12.95+deb12-amd64 96.8 MB/106 MB 91%]         682 kB/s 14s73% [1 linux-image-6.12.95+deb12-amd64 97.0 MB/106 MB 91%]         682 kB/s 13s73% [1 linux-image-6.12.95+deb12-amd64 97.2 MB/106 MB 91%]         682 kB/s 13s73% [1 linux-image-6.12.95+deb12-amd64 97.3 MB/106 MB 91%]         682 kB/s 13s73% [1 linux-image-6.12.95+deb12-amd64 97.7 MB/106 MB 92%]         682 kB/s 12s74% [1 linux-image-6.12.95+deb12-amd64 98.2 MB/106 MB 92%]         682 kB/s 12s74% [1 linux-image-6.12.95+deb12-amd64 98.6 MB/106 MB 93%]         513 kB/s 15s74% [1 linux-image-6.12.95+deb12-amd64 98.9 MB/106 MB 93%]         513 kB/s 14s75% [1 linux-image-6.12.95+deb12-amd64 99.3 MB/106 MB 93%]         513 kB/s 13s75% [1 linux-image-6.12.95+deb12-amd64 99.6 MB/106 MB 94%]         513 kB/s 13s75% [1 linux-image-6.12.95+deb12-amd64 100 MB/106 MB 94%]          513 kB/s 12s76% [1 linux-image-6.12.95+deb12-amd64 101 MB/106 MB 95%]          513 kB/s 11s76% [1 linux-image-6.12.95+deb12-amd64 102 MB/106 MB 95%]           513 kB/s 9s77% [1 linux-image-6.12.95+deb12-amd64 102 MB/106 MB 96%]           513 kB/s 8s77% [1 linux-image-6.12.95+deb12-amd64 103 MB/106 MB 96%]           513 kB/s 7s77% [1 linux-image-6.12.95+deb12-amd64 103 MB/106 MB 97%]           513 kB/s 7s78% [1 linux-image-6.12.95+deb12-amd64 103 MB/106 MB 97%]           513 kB/s 6s78% [1 linux-image-6.12.95+deb12-amd64 104 MB/106 MB 98%]           513 kB/s 5s79% [1 linux-image-6.12.95+deb12-amd64 105 MB/106 MB 98%]           994 kB/s 1s79% [1 linux-image-6.12.95+deb12-amd64 106 MB/106 MB 99%]           994 kB/s 0s80% [1 linux-image-6.12.95+deb12-amd64 106 MB/106 MB 100%]          994 kB/s 0s90% [Working]                                                       994 kB/s 0s                                                                               Get:2 http://deb.debian.org/debian bookworm-backports/main amd64 linux-image-amd64 amd64 6.12.95-1~bpo12+1 [1484 B]
+90% [2 linux-image-amd64 1484 B/1484 B 100%]                        994 kB/s 0s100% [Working]                                                      994 kB/s 0s                                                                               Fetched 106 MB in 2min 33s (697 kB/s)
+apt-listchanges: Reading changelogs...
+Selecting previously unselected package linux-image-6.12.95+deb12-amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23106 files and directories currently installed.)
+Preparing to unpack .../linux-image-6.12.95+deb12-amd64_6.12.95-1~bpo12+1_amd64.deb ...
+Unpacking linux-image-6.12.95+deb12-amd64 (6.12.95-1~bpo12+1) ...
+Preparing to unpack .../linux-image-amd64_6.12.95-1~bpo12+1_amd64.deb ...
+Unpacking linux-image-amd64 (6.12.95-1~bpo12+1) over (6.1.192-2) ...
+Setting up linux-image-6.12.95+deb12-amd64 (6.12.95-1~bpo12+1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-6.12.95+deb12-amd64

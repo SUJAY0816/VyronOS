@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Web Browser
+Comment=Browse the Web
+Exec=x-www-browser %u
+Icon=vyron-browser
+Terminal=false
+Categories=Network;WebBrowser;

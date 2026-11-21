@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Calculator
+Comment=Perform Arithmetic Calculations
+Exec=xcalc
+Icon=vyron-calc
+Terminal=false
+Categories=Utility;Calculator;

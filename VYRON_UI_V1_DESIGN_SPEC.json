@@ -1,0 +1,864 @@
+{
+  "project": {
+    "name": "VyronOS",
+    "ui_name": "Vyron UI V1",
+    "phase": 5,
+    "version": "1.0.0",
+    "description": "A premium hybrid Linux desktop environment combining macOS-inspired visual elements with Windows-style usability.",
+    "implementation_status": "design_specification",
+    "target_os": "Debian 12",
+    "architecture": "Linux-based operating system",
+    "virtualization": "Oracle VM VirtualBox",
+    "host_environment": "macOS Apple Silicon"
+  },
+  "critical_rules": {
+    "preserve_phase4_golden_master": true,
+    "golden_master": "dist/VyronOS-Disk-Phase4-Verified.qcow2",
+    "never_modify_golden_master": true,
+    "create_phase5_working_clone": true,
+    "preserve_existing_backups": true,
+    "do_not_create_fake_os": true,
+    "do_not_use_browser_desktop": true,
+    "do_not_use_html_as_desktop": true,
+    "do_not_fake_hardware": true,
+    "do_not_fake_network_connections": true,
+    "do_not_fake_system_monitor_values": true,
+    "preserve_serial_console": true,
+    "preserve_text_mode_recovery": true,
+    "preserve_network_manager": true,
+    "preserve_ext4_filesystem": true,
+    "preserve_bash": true,
+    "preserve_systemd": true,
+    "preserve_linux_fallback_kernel": true,
+    "test_only_on_phase5_clone": true
+  },
+  "design_direction": {
+    "style": "Hybrid macOS and Windows",
+    "visual_identity": "Original Vyron branding",
+    "appearance": "Minimal, premium, modern, professional",
+    "avoid": [
+      "Generic AI-looking icons",
+      "Random icon styles",
+      "Excessive gradients",
+      "Excessive animations",
+      "Overly bright colours",
+      "Unnecessary widgets",
+      "Fake application windows",
+      "Copied Apple or Windows logos",
+      "Browser-based desktop simulation"
+    ],
+    "inspiration": {
+      "macos": [
+        "Top menu bar",
+        "Centered floating dock",
+        "Minimal window appearance",
+        "Clean spacing"
+      ],
+      "windows": [
+        "Start application launcher",
+        "Application search",
+        "Running application indicators",
+        "Practical desktop workflow"
+      ]
+    }
+  },
+  "technical_stack": {
+    "display_server": "Xorg",
+    "desktop_environment": "XFCE4",
+    "window_manager": "XFWM4",
+    "display_manager": "LightDM",
+    "toolkit": "GTK3",
+    "file_manager": "Thunar",
+    "terminal": "XFCE Terminal",
+    "shell": "GNU Bash",
+    "network_manager": "NetworkManager",
+    "service_manager": "systemd",
+    "filesystem": "ext4",
+    "system_monitor": "Native GTK3 application or maintained Linux system monitor",
+    "launcher": "Native XFCE-compatible application launcher",
+    "dock": "Native Linux dock compatible with XFCE"
+  },
+  "desktop": {
+    "layout": "hybrid",
+    "reference_resolution": {
+      "width": 1920,
+      "height": 1080,
+      "aspect_ratio": "16:9"
+    },
+    "supported_test_resolutions": [
+      "1920x1080",
+      "1366x768",
+      "1280x720"
+    ],
+    "components": {
+      "top_bar": {
+        "enabled": true,
+        "height": 32,
+        "position": "top",
+        "width": "100%",
+        "style": "macOS-inspired",
+        "left_section": [
+          "Vyron logo",
+          "Application menu",
+          "Active application name"
+        ],
+        "center_section": [
+          "Optional date and time"
+        ],
+        "right_section": [
+          "Network status",
+          "Audio status",
+          "Notifications",
+          "Quick settings",
+          "Clock",
+          "Power menu"
+        ],
+        "requirements": [
+          "Use real system status",
+          "Use consistent icons",
+          "Maintain readable contrast",
+          "Avoid unnecessary visual clutter"
+        ]
+      },
+      "desktop_canvas": {
+        "enabled": true,
+        "wallpaper": "vyron-dark.png",
+        "icon_alignment": "grid",
+        "default_icons": [
+          "Home",
+          "Files",
+          "Trash"
+        ],
+        "requirements": [
+          "Icons must open real applications or locations",
+          "Avoid icon overlap",
+          "Maintain desktop safe area",
+          "Support right-click context menus"
+        ]
+      },
+      "dock": {
+        "enabled": true,
+        "position": "bottom-center",
+        "style": "floating",
+        "target_height": 68,
+        "icon_size": 42,
+        "bottom_margin": 18,
+        "corner_radius": 20,
+        "pinned_applications": [
+          "Files",
+          "Terminal",
+          "Settings",
+          "System Monitor"
+        ],
+        "optional_applications": [
+          "Browser"
+        ],
+        "behaviour": {
+          "click_closed_app": "Launch application",
+          "click_running_app": "Focus existing window",
+          "running_indicator": true,
+          "hover_effect": true,
+          "hover_scale": "subtle",
+          "duplicate_windows": "Group or clearly distinguish",
+          "auto_hide": false
+        },
+        "requirements": [
+          "Must launch real Linux applications",
+          "Must show running applications",
+          "Must not overlap important window controls",
+          "Must adapt to smaller resolutions"
+        ]
+      },
+      "start_launcher": {
+        "enabled": true,
+        "trigger": "Vyron logo or launcher shortcut",
+        "keyboard_shortcut": "Super",
+        "style": "Windows-inspired",
+        "target_width": 620,
+        "target_height": 580,
+        "sections": [
+          "Search",
+          "Pinned applications",
+          "All applications",
+          "Categories",
+          "Power actions"
+        ],
+        "search": {
+          "enabled": true,
+          "source": "Installed desktop entries",
+          "must_launch_real_applications": true,
+          "keyboard_navigation": true,
+          "enter_launches_application": true,
+          "escape_closes_launcher": true
+        },
+        "requirements": [
+          "Do not use hard-coded fake applications",
+          "Read installed desktop entries",
+          "Support keyboard navigation",
+          "Use original Vyron styling"
+        ]
+      }
+    }
+  },
+  "design_system": {
+    "spacing_unit": 8,
+    "corner_radius": {
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "dock": 20
+    },
+    "typography": {
+      "preferred_font": "Inter",
+      "fallback": "Installed system sans-serif",
+      "sizes": {
+        "page_heading": 24,
+        "window_heading": 16,
+        "body": 14,
+        "secondary": 12
+      },
+      "requirements": [
+        "Readable font rendering",
+        "Consistent font weights",
+        "No dependency on unavailable proprietary fonts"
+      ]
+    },
+    "animation": {
+      "enabled": true,
+      "duration_ms": {
+        "fast": 120,
+        "normal": 160,
+        "slow": 180
+      },
+      "effects": [
+        "Subtle hover",
+        "Button feedback",
+        "Launcher opening",
+        "Dock hover"
+      ],
+      "performance_rule": "Disable expensive effects if VirtualBox performance is poor"
+    }
+  },
+  "themes": {
+    "default": "dark",
+    "available": [
+      "dark",
+      "light"
+    ],
+    "dark": {
+      "wallpaper": "vyron-dark.png",
+      "colors": {
+        "background": "#111318",
+        "surface": "#1A1E26",
+        "surface_raised": "#232936",
+        "border": "#343B49",
+        "text": "#F2F4F8",
+        "muted": "#A6AFBE",
+        "accent": "#7C8CFF",
+        "accent_strong": "#6577F5",
+        "success": "#45B887",
+        "warning": "#E8B45B",
+        "danger": "#E16D78"
+      }
+    },
+    "light": {
+      "wallpaper": "vyron-light.png",
+      "colors": {
+        "background": "#F3F5F8",
+        "surface": "#FFFFFF",
+        "surface_raised": "#FFFFFF",
+        "border": "#DCE1E9",
+        "text": "#202633",
+        "muted": "#667085",
+        "accent": "#596BEB",
+        "accent_strong": "#4859D5",
+        "success": "#21865F",
+        "warning": "#A66A12",
+        "danger": "#C34453"
+      }
+    },
+    "switching": {
+      "utility": "vyron-theme",
+      "supported_commands": [
+        "vyron-theme dark",
+        "vyron-theme light",
+        "vyron-theme status"
+      ],
+      "must_persist": true,
+      "persist_after_logout": true,
+      "persist_after_reboot": true,
+      "update_components": [
+        "GTK3",
+        "XFWM4",
+        "XFCE panel",
+        "Icon theme",
+        "Terminal",
+        "Desktop",
+        "Notifications",
+        "Launcher",
+        "Dock"
+      ],
+      "must_not_kill_desktop_session": true,
+      "single_source_of_truth": true
+    }
+  },
+  "icons": {
+    "style": "Original Vyron geometric line icons",
+    "design_grid": "24x24",
+    "nominal_stroke_width": 2,
+    "line_caps": "round",
+    "line_joins": "round",
+    "default_color": "inherit",
+    "accent_usage": "Active and selected states only",
+    "formats": [
+      "SVG",
+      "PNG"
+    ],
+    "required_sizes": [
+      16,
+      22,
+      24,
+      32,
+      48,
+      64
+    ],
+    "required_icons": [
+      {
+        "name": "vyron-logo",
+        "purpose": "Original Vyron V symbol"
+      },
+      {
+        "name": "vyron-files",
+        "purpose": "File manager"
+      },
+      {
+        "name": "vyron-folder",
+        "purpose": "Folder"
+      },
+      {
+        "name": "vyron-home",
+        "purpose": "Home directory"
+      },
+      {
+        "name": "vyron-terminal",
+        "purpose": "Terminal"
+      },
+      {
+        "name": "vyron-settings",
+        "purpose": "System settings"
+      },
+      {
+        "name": "vyron-system-monitor",
+        "purpose": "System performance"
+      },
+      {
+        "name": "vyron-network",
+        "purpose": "Network status"
+      },
+      {
+        "name": "vyron-ethernet",
+        "purpose": "Ethernet connection"
+      },
+      {
+        "name": "vyron-wifi",
+        "purpose": "Wireless network when detected"
+      },
+      {
+        "name": "vyron-audio",
+        "purpose": "Audio"
+      },
+      {
+        "name": "vyron-display",
+        "purpose": "Display settings"
+      },
+      {
+        "name": "vyron-notifications",
+        "purpose": "Notifications"
+      },
+      {
+        "name": "vyron-search",
+        "purpose": "Application search"
+      },
+      {
+        "name": "vyron-power",
+        "purpose": "Power menu"
+      },
+      {
+        "name": "vyron-restart",
+        "purpose": "Restart"
+      },
+      {
+        "name": "vyron-shutdown",
+        "purpose": "Shutdown"
+      },
+      {
+        "name": "vyron-lock",
+        "purpose": "Lock screen"
+      },
+      {
+        "name": "vyron-trash",
+        "purpose": "Trash"
+      },
+      {
+        "name": "vyron-usb",
+        "purpose": "Removable storage"
+      },
+      {
+        "name": "vyron-theme-dark",
+        "purpose": "Dark appearance"
+      },
+      {
+        "name": "vyron-theme-light",
+        "purpose": "Light appearance"
+      }
+    ],
+    "requirements": [
+      "No emoji as primary application icons",
+      "No unrelated mixed icon packs",
+      "No copied Apple or Windows branding",
+      "Consistent optical size",
+      "Legible at small sizes",
+      "All icon mappings must resolve to actual assets"
+    ]
+  },
+  "applications": {
+    "files": {
+      "display_name": "Files",
+      "implementation": "Thunar",
+      "desktop_entry": "thunar.desktop",
+      "must_use_real_ext4": true,
+      "tests": [
+        "Open directory",
+        "Create test file",
+        "Rename test file",
+        "Copy test file",
+        "Move test file",
+        "Delete test file"
+      ]
+    },
+    "terminal": {
+      "display_name": "Terminal",
+      "implementation": "XFCE Terminal",
+      "shell": "Bash",
+      "tests": [
+        "Open terminal",
+        "Run pwd",
+        "Run ls",
+        "Run Bash command",
+        "Verify command exit status"
+      ]
+    },
+    "settings": {
+      "display_name": "Settings",
+      "implementation": "XFCE settings tools",
+      "tests": [
+        "Open appearance settings",
+        "Open display settings",
+        "Open keyboard settings",
+        "Open session settings"
+      ]
+    },
+    "system_monitor": {
+      "display_name": "System Monitor",
+      "implementation": "Native GTK3 or maintained Linux system monitor",
+      "data_sources": [
+        "/proc/stat",
+        "/proc/meminfo",
+        "/proc",
+        "/sys",
+        "NetworkManager",
+        "Filesystem statistics"
+      ],
+      "tests": [
+        "Verify CPU readings",
+        "Verify memory readings",
+        "Verify process information",
+        "Verify storage usage",
+        "Verify network interface information"
+      ]
+    },
+    "network": {
+      "display_name": "Network",
+      "implementation": "NetworkManager",
+      "must_show_real_connection": true,
+      "must_not_fake_wifi": true,
+      "must_report_ethernet_when_appropriate": true,
+      "wifi_unavailable_message": "No wireless hardware detected",
+      "tests": [
+        "Read NetworkManager status",
+        "Display actual connection type",
+        "Display actual connection state",
+        "Open network settings"
+      ]
+    },
+    "power": {
+      "display_name": "Power",
+      "implementation": "systemd and logind",
+      "actions": [
+        "Lock",
+        "Log out",
+        "Restart",
+        "Shut down"
+      ],
+      "must_use_real_system_actions": true
+    }
+  },
+  "quick_settings": {
+    "enabled": true,
+    "items": [
+      "Network",
+      "Audio",
+      "Display",
+      "Notifications",
+      "Theme",
+      "Power"
+    ],
+    "conditional_items": {
+      "wifi": "Show only when a wireless adapter is detected",
+      "bluetooth": "Show only when Bluetooth hardware and service are available",
+      "battery": "Show only when battery telemetry is available",
+      "brightness": "Show only when a controllable display brightness device exists"
+    },
+    "rules": [
+      "Never invent device states",
+      "Use live system information",
+      "Unavailable features must be labelled",
+      "Buttons must invoke real actions"
+    ]
+  },
+  "login_screen": {
+    "display_manager": "LightDM",
+    "branding": "Vyron",
+    "style": "Minimal and premium",
+    "user": "vyron",
+    "authentication": "Preserve existing authentication policy",
+    "autologin": {
+      "allowed_for_vm_development": true,
+      "must_be_documented": true,
+      "must_not_expose_passwords": true
+    },
+    "requirements": [
+      "Reliable login",
+      "Reliable logout",
+      "Recoverable failed graphical session",
+      "Serial console remains available",
+      "Text mode login remains available"
+    ]
+  },
+  "system_integration": {
+    "theme_utility": {
+      "name": "vyron-theme",
+      "location": "/usr/local/bin/vyron-theme",
+      "source": "scripts/vyron_theme.py",
+      "requirements": [
+        "Support dark theme",
+        "Support light theme",
+        "Support status command",
+        "Validate arguments",
+        "Persist selected theme",
+        "Handle errors",
+        "Be safe to rerun"
+      ]
+    },
+    "system_monitor_utility": {
+      "name": "vyron-sysmon",
+      "location": "/usr/local/bin/vyron-sysmon",
+      "source": "scripts/vyron_sysmon.py",
+      "requirements": [
+        "Use live kernel data",
+        "Show real CPU usage",
+        "Show real memory usage",
+        "Show real storage usage",
+        "Show real process information",
+        "Never use fabricated sample values"
+      ]
+    },
+    "hardware_information": {
+      "utility": "vyron-hwinfo",
+      "data_source": [
+        "/proc",
+        "/sys",
+        "PCI",
+        "USB",
+        "Network interfaces"
+      ],
+      "requirements": [
+        "Preserve existing functionality",
+        "Show actual detected devices",
+        "Report unavailable hardware honestly"
+      ]
+    },
+    "storage": {
+      "utility": "vyron-storage",
+      "requirements": [
+        "Preserve existing functionality",
+        "Use real filesystem information",
+        "Never format production storage during UI testing"
+      ]
+    }
+  },
+  "virtualbox_graphics": {
+    "must_inspect_actual_display_device": true,
+    "must_inspect_guest_driver": true,
+    "must_inspect_xorg_logs": true,
+    "must_test_xrandr": true,
+    "must_test_resolution_changes": true,
+    "must_test_keyboard_and_mouse": true,
+    "graphics_controller": "VBoxSVGA / VMSVGA",
+    "guest_driver": "vmwgfx / modesetting",
+    "acceleration_claim": "Only claim acceleration when verified by actual device and driver evidence",
+    "fallback": "Use the most reliable supported software or virtual display mode"
+  },
+  "asset_structure": {
+    "design_document": "docs/VYRON_UI_V1_DESIGN_SPEC.md",
+    "implementation_plan": "docs/VYRON_UI_V1_IMPLEMENTATION_PLAN.md",
+    "asset_manifest": "docs/VYRON_UI_V1_ASSET_MANIFEST.md",
+    "final_report": "docs/PHASE5_IMPLEMENTATION_REPORT.md",
+    "icons": "assets/icons/",
+    "dark_theme": "assets/themes/dark/",
+    "light_theme": "assets/themes/light/",
+    "wallpapers": "assets/wallpapers/",
+    "evidence": "docs/evidence/phase5/",
+    "scripts": "scripts/"
+  },
+  "wallpapers": {
+    "dark": {
+      "filename": "vyron-dark.png",
+      "resolution": "1920x1080",
+      "style": "Minimal dark abstract geometry with subtle slate and violet-blue lighting",
+      "requirements": [
+        "No text",
+        "No watermarks",
+        "No busy details",
+        "Desktop icons must remain readable"
+      ]
+    },
+    "light": {
+      "filename": "vyron-light.png",
+      "resolution": "1920x1080",
+      "style": "Minimal light abstract geometry with soft white, silver and restrained blue-violet",
+      "requirements": [
+        "No text",
+        "No watermarks",
+        "No busy details",
+        "Desktop icons must remain readable"
+      ]
+    },
+    "logo": {
+      "filename": "vyron-logo.png",
+      "style": "Original geometric V identity",
+      "requirements": [
+        "Minimal",
+        "Recognizable",
+        "Scalable",
+        "No generic AI visual style"
+      ]
+    }
+  },
+  "implementation_stages": [
+    {
+      "stage": 1,
+      "name": "Inspect and protect",
+      "tasks": [
+        "Inspect existing repository",
+        "Inspect Phase 5 installer",
+        "Verify Phase 4 golden master checksum",
+        "Create a Phase 5 working clone",
+        "Inspect current VirtualBox graphics device (VBoxSVGA / VMSVGA)"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "Create design assets",
+      "tasks": [
+        "Create original Vyron icon family",
+        "Create dark theme assets",
+        "Create light theme assets",
+        "Prepare wallpapers",
+        "Create asset manifest"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "Configure desktop",
+      "tasks": [
+        "Configure XFCE panel",
+        "Configure top bar",
+        "Configure application launcher",
+        "Configure dock",
+        "Configure XFWM4",
+        "Configure desktop icons"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "Integrate applications",
+      "tasks": [
+        "Integrate Thunar",
+        "Integrate XFCE Terminal",
+        "Integrate real settings tools",
+        "Integrate live system monitor",
+        "Integrate NetworkManager status",
+        "Integrate real power actions"
+      ]
+    },
+    {
+      "stage": 5,
+      "name": "Theme system",
+      "tasks": [
+        "Implement dark theme",
+        "Implement light theme",
+        "Implement theme switching",
+        "Persist theme selection",
+        "Verify theme after cold reboot"
+      ]
+    },
+    {
+      "stage": 6,
+      "name": "Visual and functional validation",
+      "tasks": [
+        "Boot actual VirtualBox guest",
+        "Capture real VirtualBox screenshots via VBoxManage",
+        "Test launcher",
+        "Test dock",
+        "Test window management",
+        "Test applications",
+        "Test hardware status",
+        "Test smaller resolutions"
+      ]
+    },
+    {
+      "stage": 7,
+      "name": "Regression and reporting",
+      "tasks": [
+        "Run Phase 4 regression tests",
+        "Verify golden master checksum",
+        "Fix failures",
+        "Rerun affected tests",
+        "Write evidence-backed report",
+        "Stop for review"
+      ]
+    }
+  ],
+  "acceptance_tests": {
+    "boot": [
+      "Cold boot reaches LightDM",
+      "Login starts XFCE",
+      "Logout returns to login screen",
+      "Reboot works",
+      "Serial console remains accessible",
+      "Text mode recovery works"
+    ],
+    "appearance": [
+      "Top bar appears correctly",
+      "Dock appears correctly",
+      "Launcher appears correctly",
+      "Dark theme works",
+      "Light theme works",
+      "Theme persists after reboot",
+      "Icons are consistent",
+      "No missing icons",
+      "No overlapping panels",
+      "Smaller resolution works"
+    ],
+    "applications": [
+      "Files opens Thunar",
+      "Files accesses real ext4",
+      "Terminal opens genuine Bash",
+      "Settings opens real settings",
+      "System Monitor displays live data",
+      "Launcher searches installed applications",
+      "Dock launches real applications",
+      "Window controls work",
+      "Alt+Tab works"
+    ],
+    "network": [
+      "Network status is real",
+      "Ethernet is correctly identified",
+      "Wi-Fi is shown only when hardware exists",
+      "NetworkManager state is displayed correctly"
+    ],
+    "power": [
+      "Lock works when supported",
+      "Logout works",
+      "Restart works",
+      "Shutdown works"
+    ],
+    "persistence": [
+      "Theme survives cold reboot",
+      "Panel configuration survives reboot",
+      "Dock configuration survives reboot",
+      "Applications remain installed",
+      "No duplicate launchers after rerunning installer"
+    ],
+    "regression": [
+      "Phase 4 filesystem tests pass",
+      "Phase 4 storage tests pass",
+      "Phase 4 shell tests pass",
+      "Phase 4 persistence tests pass",
+      "Phase 4 network functionality remains intact",
+      "Phase 4 golden master remains unchanged"
+    ]
+  },
+  "evidence": {
+    "must_capture_actual_virtualbox_screenshots": true,
+    "screenshots": [
+      "lightdm-login.png",
+      "desktop-dark.png",
+      "desktop-light.png",
+      "launcher-open.png",
+      "dock-running-apps.png",
+      "files-manager.png",
+      "terminal-bash.png",
+      "system-monitor-live.png",
+      "network-status.png",
+      "power-menu.png",
+      "smaller-resolution.png",
+      "theme-persistence-after-reboot.png"
+    ],
+    "report_must_include": [
+      "Test identifier",
+      "Command or interaction",
+      "Expected result",
+      "Actual result",
+      "Pass or fail",
+      "Evidence path",
+      "Known limitations"
+    ],
+    "mockup_is_not_test_evidence": true
+  },
+  "completion_rules": {
+    "all_acceptance_tests_must_be_executed": true,
+    "package_installation_alone_is_not_proof": true,
+    "screenshots_must_come_from_actual_guest": true,
+    "failed_tests_must_be_reported": true,
+    "known_limitations_must_be_documented": true,
+    "phase4_regression_required": true,
+    "phase4_golden_master_must_remain_unchanged": true,
+    "stop_after_phase5": true,
+    "do_not_begin_phase6_without_review": true
+  },
+  "antigravity_instructions": {
+    "role": "Senior Linux desktop integration engineer and UI implementer",
+    "objective": "Implement Vyron UI V1 as a genuine native Linux desktop on the existing VyronOS Debian guest.",
+    "first_action": "Inspect the project and current Phase 5 installation state before changing anything.",
+    "execution": [
+      "Read this entire JSON specification.",
+      "Inspect existing scripts and avoid creating duplicate installers.",
+      "Verify the Phase 4 golden master and clone it.",
+      "Create an implementation plan.",
+      "Implement the icon and theme assets.",
+      "Configure XFCE, launcher, dock and window manager.",
+      "Integrate real applications and system telemetry.",
+      "Implement persistent dark and light theme switching.",
+      "Boot the actual guest in VirtualBox.",
+      "Capture actual VirtualBox screenshots via VBoxManage.",
+      "Run all acceptance tests.",
+      "Run Phase 4 regression tests.",
+      "Fix failures and retest.",
+      "Write the final implementation report.",
+      "Stop and request Phase 5 review."
+    ],
+    "final_instruction": "Do not report completion until the actual guest has booted, the desktop has been visually inspected, the acceptance tests have been executed, and evidence has been recorded. Never modify the Phase 4 golden master."
+  }
+}

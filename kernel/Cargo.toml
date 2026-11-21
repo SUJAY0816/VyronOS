@@ -1,0 +1,18 @@
+[package]
+name = "vyron-kernel"
+version = "0.1.0"
+edition = "2021"
+authors = ["SREEHARAN"]
+description = "VYRON High-Performance Micro-OS Kernel"
+
+[dependencies]
+
+[dev-dependencies]
+
+[[bin]]
+name = "vyron-kernel"
+path = "src/main.rs"
+
+[lib]
+name = "vyron_kernel"
+path = "src/lib.rs"
