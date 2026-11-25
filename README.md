@@ -14,14 +14,15 @@
 
 ## Academic Coursework Reports & Lab Records
 
-The complete coursework submissions and lab records for **Operating Systems (25PCCS201 - JAIN, FET Campus)** are included in [`academic_reports/`](academic_reports/):
+The complete coursework submissions, project report, and lab records for **Operating Systems (25PCCS201 - JAIN, FET Campus — Sujay V, `25BTRCL264`)** are included in [`docs/reports/`](docs/reports/):
 
 | Report / Document | Assessment | Description | Link |
 | :--- | :--- | :--- | :--- |
-| **CA-2 Investigation** | Continuous Assessment 2 | *Multi-Core Scheduling: Effect of Processor Affinity and Workload Distribution* | [📄 View PDF](academic_reports/CA2_Multi_Core_Scheduling_Performance_Investigation.pdf) |
-| **CA-3 Challenge** | Continuous Assessment 3 | *Multi-Core Scheduling Design & Debugging Challenge* | [📄 View PDF](academic_reports/CA3_Multi_Core_Scheduling_Design_and_Debugging_Challenge.pdf) |
-| **CA-5 Investigation** | Continuous Assessment 5 | *Linux Systems Engineering: CPU Affinity & Scheduling Observation* | [📄 View PDF](academic_reports/CA5_Multi_Core_Scheduling_Linux_Systems_Engineering.pdf) |
-| **OS Lab Record** | Practical Record | *Complete Lab Manual (Experiments 2.24 through 21.02)* | [📄 View PDF](academic_reports/OS_Lab_Record_Sujay_V_25BTRCL264.pdf) |
+| **VyronOS Project Report** | Project & Research Report | *VyronOS: Dual-Track Rust UEFI Microkernel, Live Desktop & ISO Pipeline* | [📄 View PDF](docs/reports/VyronOS_Project_Research_Report_Sujay_V.pdf) |
+| **CA-2 Investigation** | Continuous Assessment 2 | *Multi-Core Scheduling: Effect of Processor Affinity and Workload Distribution* | [📄 View PDF](docs/reports/CA2_Multi_Core_Scheduling_Performance_Investigation.pdf) |
+| **CA-3 Challenge** | Continuous Assessment 3 | *Multi-Core Scheduling Design & Debugging Challenge* | [📄 View PDF](docs/reports/CA3_Multi_Core_Scheduling_Design_and_Debugging_Challenge.pdf) |
+| **CA-5 Investigation** | Continuous Assessment 5 | *Linux Systems Engineering: CPU Affinity & Scheduling Observation* | [📄 View PDF](docs/reports/CA5_Multi_Core_Scheduling_Linux_Systems_Engineering.pdf) |
+| **OS Lab Record** | Practical Record | *Complete Lab Manual (Experiments 2.24 through 21.02)* | [📄 View PDF](docs/reports/OS_Lab_Record_Sujay_V_25BTRCL264.pdf) |
 
 ---
 
